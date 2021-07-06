@@ -1,0 +1,1566 @@
+  bash arg: -p
+  bash arg: com.zego.smoketest
+  bash arg: --ignore-timeouts
+  bash arg: --ignore-crashes
+  bash arg: --kill-process-after-error
+  bash arg: --pct-touch
+  bash arg: 40
+  bash arg: --pct-motion
+  bash arg: 20
+  bash arg: --pct-trackball
+  bash arg: 10
+  bash arg: --throttle
+  bash arg: 500
+  bash arg: -v
+  bash arg: -v
+  bash arg: -v
+  bash arg: 1500
+:Monkey: seed=1625576849283 count=1500
+:AllowPackage: com.zego.smoketest
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Selecting main activities from category android.intent.category.LAUNCHER
+//   - NOT USING main activity com.android.browser.launch.SplashActivity (from package com.android.browser)
+//   - NOT USING main activity com.android.calendar.homepage.AllInOneActivity (from package com.android.calendar)
+//   - NOT USING main activity com.android.camera.Camera (from package com.android.camera)
+//   - NOT USING main activity com.android.contacts.activities.PeopleActivity (from package com.android.contacts)
+//   - NOT USING main activity com.android.contacts.activities.TwelveKeyDialer (from package com.android.contacts)
+//   - NOT USING main activity com.android.deskclock.DeskClockTabActivity (from package com.android.deskclock)
+//   - NOT USING main activity com.android.fileexplorer.FileExplorerTabActivity (from package com.android.fileexplorer)
+//   - NOT USING main activity com.android.mms.ui.MmsTabActivity (from package com.android.mms)
+//   - NOT USING main activity com.android.settings.MainSettings (from package com.android.settings)
+//   - NOT USING main activity com.android.soundrecorder.SoundRecorder (from package com.android.soundrecorder)
+//   - NOT USING main activity com.android.thememanager.ThemeResourceTabActivity (from package com.android.thememanager)
+//   - NOT USING main activity com.xiaomi.jr.app.MiFinanceActivity (from package com.mipay.wallet)
+//   - NOT USING main activity com.miui.gallery.activity.HomePageActivity (from package com.miui.gallery)
+//   - NOT USING main activity com.miui.miservice.main.MainActivity (from package com.miui.miservice)
+//   - NOT USING main activity com.xiaomi.market.ui.MarketTabActivity (from package com.xiaomi.market)
+//   - NOT USING main activity com.google.android.apps.chrome.Main (from package com.android.chrome)
+//   - NOT USING main activity com.android.email.activity.Welcome (from package com.android.email)
+//   - NOT USING main activity com.iflytek.inputmethod.LauncherActivity (from package com.iflytek.inputmethod)
+//   - NOT USING main activity com.miui.calculator.cal.CalculatorActivity (from package com.miui.calculator)
+//   - NOT USING main activity com.miui.notes.ui.NotesListActivity (from package com.miui.notes)
+//   - NOT USING main activity com.miui.weather2.ActivityWeatherMain (from package com.miui.weather2)
+//   - NOT USING main activity com.sogou.androidtool.SplashActivity (from package com.mobiletool.appstore)
+//   - NOT USING main activity com.yxcorp.gifshow.HomeActivity (from package com.smile.gifmaker)
+//   - NOT USING main activity com.xiaomi.jr.app.MiFinanceActivity (from package com.xiaomi.jr)
+//   - NOT USING main activity com.xiaomi.scanner.app.ScanActivity (from package com.xiaomi.scanner)
+//   - NOT USING main activity com.android.providers.downloads.ui.DownloadList (from package com.android.providers.downloads.ui)
+//   - NOT USING main activity com.miui.fmradio.FmActivity (from package com.miui.fm)
+//   - NOT USING main activity com.miui.player.ui.MusicBrowserActivity (from package com.miui.player)
+//   - NOT USING main activity com.miui.securityscan.MainActivity (from package com.miui.securitycenter)
+//   - NOT USING main activity com.miui.video.Launcher1 (from package com.miui.video)
+//   - NOT USING main activity com.xiaomi.voiceassistant.LauncherRouterActivity (from package com.miui.voiceassist)
+//   - NOT USING main activity cn.lezhi.speedtest.welcome.WelcomeActivity (from package cn.lezhi.speedtest)
+//   - NOT USING main activity cn.wps.moffice.documentmanager.PreStartActivity (from package cn.wps.moffice_eng)
+//   - NOT USING main activity com.mqunar.splash.SplashActivity (from package com.Qunar)
+//   - NOT USING main activity com.UCMobile.main.UCMobile (from package com.UCMobile)
+//   - NOT USING main activity com.autonavi.map.activity.SplashActivity (from package com.autonavi.minimap)
+//   - NOT USING main activity com.bilibili.bilibililive.splash.SplashActivity (from package com.bilibili.bilibililive)
+//   - NOT USING main activity com.coolcsf.testtrtcsample.MainActivity (from package com.coolcsf.testtrtcsample)
+//   - NOT USING main activity com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2 (from package com.duokan.phone.remotecontroller)
+//   - NOT USING main activity com.duokan.reader.DkReaderActivity (from package com.duokan.reader)
+//   - NOT USING main activity com.eg.android.AlipayGphone.AlipayLogin (from package com.eg.android.AlipayGphone)
+//   - NOT USING main activity com.example.test.TestActivity (from package com.example.test)
+//   - NOT USING main activity com.google.sample.aaudio.echo.MainActivity (from package com.google.sample.aaudio.echo)
+//   - NOT USING main activity com.kugou.android.app.splash.SplashActivity (from package com.kugou.android.ktvapp)
+//   - NOT USING main activity com.mico.login.ui.LoadActivity (from package com.mico)
+//   - NOT USING main activity com.miui.compass.CompassActivity (from package com.miui.compass)
+//   - NOT USING main activity com.miui.huanji.MainActivity (from package com.miui.huanji)
+//   - NOT USING main activity com.miui.screenrecorder.activity.ScreenRecorderHomeActivity (from package com.miui.screenrecorder)
+//   - NOT USING main activity com.miui.virtualsim.ui.MainActivity (from package com.miui.virtualsim)
+//   - NOT USING main activity com.mobileer.androidfxlab.MainActivity (from package com.mobileer.androidfxlab)
+//   - NOT USING main activity com.netease.cloudmusic.activity.LoadingActivity (from package com.netease.cloudmusic)
+//   - NOT USING main activity com.qiyi.video.WelcomeActivity (from package com.qiyi.video)
+//   - NOT USING main activity com.meituan.android.pt.homepage.activity.MainActivity (from package com.sankuai.meituan)
+//   - NOT USING main activity com.sina.weibo.SplashActivity (from package com.sina.weibo)
+//   - NOT USING main activity com.ss.android.ugc.aweme.splash.SplashActivity (from package com.ss.android.ugc.aweme)
+//   - NOT USING main activity com.taobao.ltao.maintab.MainFrameActivity (from package com.taobao.litetao)
+//   - NOT USING main activity com.taobao.tao.welcome.Welcome (from package com.taobao.taobao)
+//   - NOT USING main activity com.tencent.karaoke.module.splash.ui.SplashBaseActivity (from package com.tencent.karaoke)
+//   - NOT USING main activity com.tencent.mm.ui.LauncherUI (from package com.tencent.mm)
+//   - NOT USING main activity com.tencent.mobileqq.activity.SplashActivity (from package com.tencent.mobileqq)
+//   - NOT USING main activity com.tencent.mtt.SplashActivity (from package com.tencent.mtt)
+//   - NOT USING main activity com.tencent.qnet.Component.LoginActivity (from package com.tencent.qnet)
+//   - NOT USING main activity com.epicgames.ue4.SplashActivity (from package com.tencent.tmgp.pubgmhd)
+//   - NOT USING main activity com.tencent.wework.launch.LaunchSplashActivity (from package com.tencent.wework)
+//   - NOT USING main activity com.tme.module.rtc.MainActivity (from package com.tme.module.rtc)
+//   - NOT USING main activity com.xiaomi.gamecenter.ui.MainTabActivity (from package com.xiaomi.gamecenter)
+//   - NOT USING main activity com.xiaomi.shop.activity.MainTabActivity (from package com.xiaomi.shop)
+//   - NOT USING main activity com.xiaomi.smarthome.SmartHomeMainActivity (from package com.xiaomi.smarthome)
+//   - NOT USING main activity com.xiaomi.vipaccount.ui.splash.SplashActivity (from package com.xiaomi.vipaccount)
+//   - NOT USING main activity com.xiaomi.youpin.activity.SplashActivity (from package com.xiaomi.youpin)
+//   - NOT USING main activity com.ximalaya.ting.android.host.activity.MainActivity (from package com.ximalaya.ting.android)
+//   - NOT USING main activity com.xunmeng.pinduoduo.ui.activity.MainFrameActivity (from package com.xunmeng.pinduoduo)
+//   - NOT USING main activity com.yiyou.ga.client.BlankActivity (from package com.yiyou.ga)
+//   - NOT USING main activity com.zego.videocommunication.ui.VideoCommunicationMainUI (from package com.zego.liveroomplayground)
+//   - NOT USING main activity com.zego.loopbackdemo.MainActivity (from package com.zego.loopbackdemo)
+//   - NOT USING main activity com.zego.onlinektv.OnlineKTVMainActivity (from package com.zego.onlinektv)
+//   - NOT USING main activity com.zego.remotecheck.ui.MainActivity (from package com.zego.remotecheck.dadi)
+//   - NOT USING main activity com.zego.remotecheck.ui.MainActivity (from package com.zego.remotecheck.goujin)
+//   + Using main activity com.zego.smoketest.business.ui.MainActivity (from package com.zego.smoketest)
+//   - NOT USING main activity com.zego.videoconference.business.activity.splash.SplashActivity (from package com.zego.talklineoverseas)
+//   - NOT USING main activity com.zego.testdemo.MainActivity (from package com.zego.testdemo)
+//   - NOT USING main activity com.zego.trainingcampdemo.MainActivity (from package com.zego.trainingcampdemo)
+//   - NOT USING main activity com.zego.ve_demo.MainActivity (from package com.zego.ve_demo)
+//   - NOT USING main activity com.zego.fluttervideotalk.MainActivity (from package com.zego.videotalk)
+//   - NOT USING main activity com.zego.watchmovietogether.ui.MainActivity (from package com.zego.watchmovietogether)
+//   - NOT USING main activity com.zego.wawaji_client.MainActivity (from package com.zego.wawaji_client)
+//   - NOT USING main activity com.zego.webtestdemo.InputActivity (from package com.zego.webtestdemo)
+//   - NOT USING main activity com.zego.wrapper.demo.RoomListActivity (from package com.zego.wrapper.demo)
+//   - NOT USING main activity com.zego.chartroom.demo.ui.activity.RoomListActivity (from package com.zego.zegochatroom.demo)
+//   - NOT USING main activity im.zego.expresssample.ui.MainActivity (from package im.zego.express.example.video)
+//   - NOT USING main activity im.zego.goEnjoy.MainActivity (from package im.zego.goEnjoy)
+//   - NOT USING main activity im.zego.zegoedusuitedemo.DemoMainActivity (from package im.zego.zegoedusuitedemo)
+//   - NOT USING main activity tv.danmaku.bili.MainActivityV2 (from package tv.danmaku.bili)
+// Selecting main activities from category android.intent.category.MONKEY
+//   - NOT USING main activity com.android.quicksearchbox.SearchActivity (from package com.android.quicksearchbox)
+//   - NOT USING main activity com.android.settings.Settings$RunningServicesActivity (from package com.android.settings)
+//   - NOT USING main activity com.android.settings.Settings$StorageUseActivity (from package com.android.settings)
+//   - NOT USING main activity com.miui.cloudbackup.ui.CloudBackupDetailActivity (from package com.miui.cloudbackup)
+//   - NOT USING main activity com.miui.cloudservice.ui.MiCloudMainActivity (from package com.miui.cloudservice)
+//   - NOT USING main activity com.miui.home.launcher.Launcher (from package com.miui.home)
+//   - NOT USING main activity miui.notification.management.activity.NotificationAppListActivity (from package com.miui.notification)
+//   - NOT USING main activity com.xiaomi.account.ui.AccountSettingsActivity (from package com.xiaomi.account)
+//   - NOT USING main activity com.xiaomi.payment.MiliCenterEntryActivity (from package com.xiaomi.payment)
+//   - NOT USING main activity com.xiaomi.drivemode.UserGuideActivity (from package com.xiaomi.drivemode)
+//   - NOT USING main activity com.miui.micloudsync.MonkeyActivity (from package com.miui.micloudsync)
+//   - NOT USING main activity com.miui.personalassistant.setting.PASettingActivity (from package com.miui.personalassistant)
+//   - NOT USING main activity com.miui.virtualsim.monkeyentry.MonkeyActivity (from package com.miui.virtualsim)
+//   - NOT USING main activity com.xiaomi.drivemode.DriveModeSettingsActivity (from package com.xiaomi.drivemode)
+//   - NOT USING main activity com.xiaomi.drivemode.DriveModeAnimActivity (from package com.xiaomi.drivemode)
+//   - NOT USING main activity com.xiaomi.drivemode.MiuiLabDriveModeActivity (from package com.xiaomi.drivemode)
+//   - NOT USING main activity com.xiaomi.vipaccount.ui.splash.SplashActivity (from package com.xiaomi.vipaccount)
+// Seeded: 1625576849283
+// Event percentages:
+//   0: 40.0%
+//   1: 20.0%
+//   2: 1.0%
+//   3: 10.0%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 12.5%
+//   7: 7.5%
+//   8: 1.0%
+//   9: 1.0%
+//   10: 0.5%
+//   11: 6.5%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zego.smoketest/.business.ui.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zego.smoketest/.business.ui.MainActivity } in package com.zego.smoketest
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zego.smoketest/.business.ui.MainActivity } in package com.zego.smoketest
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(684.0,1194.0)
+:Sending Touch (ACTION_MOVE): 0:(668.7094,1199.513)
+:Sending Touch (ACTION_MOVE): 0:(664.5112,1206.1628)
+:Sending Touch (ACTION_MOVE): 0:(650.49036,1209.6127)
+:Sending Touch (ACTION_UP): 0:(649.6112,1211.4747)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(102.0,658.0)
+:Sending Touch (ACTION_UP): 0:(89.815994,646.5802)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(461.0,734.0)
+:Sending Touch (ACTION_MOVE): 0:(466.1152,747.9801)
+:Sending Touch (ACTION_UP): 0:(472.86398,748.4297)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 79    // KEYCODE_HEADSETHOOK
+:Sending Key (ACTION_UP): 79    // KEYCODE_HEADSETHOOK
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(212.0,1306.0)
+:Sending Touch (ACTION_UP): 0:(221.98642,1306.3066)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(133.0,1298.0)
+:Sending Touch (ACTION_MOVE): 0:(140.18462,1309.0118)
+:Sending Touch (ACTION_MOVE): 0:(142.87314,1316.3177)
+:Sending Touch (ACTION_MOVE): 0:(149.48354,1323.844)
+:Sending Touch (ACTION_MOVE): 0:(153.17972,1335.8694)
+:Sending Touch (ACTION_MOVE): 0:(159.83803,1345.6936)
+:Sending Touch (ACTION_MOVE): 0:(164.3642,1349.0592)
+:Sending Touch (ACTION_MOVE): 0:(170.69879,1364.8127)
+:Sending Touch (ACTION_MOVE): 0:(171.18178,1379.2174)
+:Sending Touch (ACTION_UP): 0:(176.90271,1390.1893)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(577.0,794.0)
+:Sending Touch (ACTION_UP): 0:(592.08923,792.37103)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(0.0,12.0)
+:Sending Touch (ACTION_UP): 0:(0.0,25.33865)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(321.0,1084.0)
+:Sending Touch (ACTION_MOVE): 0:(314.31653,1086.1624)
+:Sending Touch (ACTION_MOVE): 0:(308.71817,1087.3904)
+:Sending Touch (ACTION_MOVE): 0:(301.331,1090.0887)
+:Sending Touch (ACTION_MOVE): 0:(298.41617,1092.5901)
+:Sending Touch (ACTION_MOVE): 0:(290.15768,1095.1885)
+:Sending Touch (ACTION_MOVE): 0:(289.35892,1096.8906)
+:Sending Touch (ACTION_MOVE): 0:(289.21017,1100.6027)
+:Sending Touch (ACTION_MOVE): 0:(287.44745,1101.718)
+:Sending Touch (ACTION_UP): 0:(285.28152,1104.4491)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(258.0,793.0)
+:Sending Touch (ACTION_MOVE): 0:(243.22058,800.4342)
+:Sending Touch (ACTION_MOVE): 0:(237.354,820.267)
+:Sending Touch (ACTION_MOVE): 0:(224.97783,839.14343)
+:Sending Touch (ACTION_MOVE): 0:(206.15715,850.8905)
+:Sending Touch (ACTION_MOVE): 0:(184.55455,867.3349)
+:Sending Touch (ACTION_MOVE): 0:(169.31459,879.19653)
+:Sending Touch (ACTION_UP): 0:(150.14478,883.27466)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(594.0,297.0)
+:Sending Touch (ACTION_POINTER_DOWN 1): 0:(590.3084,295.3405) 1:(227.0,1066.0)
+:Sending Touch (ACTION_MOVE): 0:(585.6065,288.94916) 1:(214.57092,1070.4388)
+:Sending Touch (ACTION_MOVE): 0:(577.4863,279.10852) 1:(212.6333,1076.596)
+:Sending Touch (ACTION_MOVE): 0:(574.2786,269.8127) 1:(197.67694,1096.8555)
+:Sending Touch (ACTION_MOVE): 0:(568.67395,252.8235) 1:(188.805,1097.2563)
+:Sending Touch (ACTION_MOVE): 0:(557.01575,231.34253) 1:(178.56137,1098.3812)
+:Sending Touch (ACTION_MOVE): 0:(535.57056,226.56808) 1:(173.30473,1105.8557)
+:Sending Touch (ACTION_MOVE): 0:(523.351,210.05103) 1:(171.73956,1115.9613)
+:Sending Touch (ACTION_POINTER_UP 1): 0:(508.9845,196.81645) 1:(161.75827,1127.1774)
+:Sending Touch (ACTION_UP): 0:(492.9511,180.87074)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(307.0,528.0)
+:Sending Touch (ACTION_UP): 0:(314.16263,546.1973)
+    //[calendar_time:2021-07-06 15:49:01.334  system_uptime:103590767]
+    // Sending event #100
+Sleeping for 500 milliseconds
+    //[calendar_time:2021-07-06 15:49:01.837  system_uptime:103591270]
+    // Sending event #100
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(356.0,254.0)
+:Sending Touch (ACTION_UP): 0:(366.43402,252.48463)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(635.0,1362.0)
+:Sending Touch (ACTION_MOVE): 0:(636.1615,1374.4315)
+:Sending Touch (ACTION_MOVE): 0:(637.76776,1379.2611)
+:Sending Touch (ACTION_MOVE): 0:(638.029,1393.4576)
+:Sending Touch (ACTION_MOVE): 0:(638.8602,1396.3093)
+:Sending Touch (ACTION_MOVE): 0:(639.4742,1404.0781)
+:Sending Touch (ACTION_MOVE): 0:(640.6213,1409.1686)
+:Sending Touch (ACTION_UP): 0:(642.04755,1411.0)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Key (ACTION_DOWN): 11    // KEYCODE_4
+:Sending Key (ACTION_UP): 11    // KEYCODE_4
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(76.0,265.0)
+:Sending Touch (ACTION_UP): 0:(74.503914,267.62866)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 201    // KEYCODE_BUTTON_14
+:Sending Key (ACTION_UP): 201    // KEYCODE_BUTTON_14
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(134.0,605.0)
+:Sending Touch (ACTION_UP): 0:(119.903015,609.9881)
+Sleeping for 500 milliseconds
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zego.smoketest/.business.ui.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zego.smoketest/.business.ui.MainActivity } in package com.zego.smoketest
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zego.smoketest/.business.ui.MainActivity } in package com.zego.smoketest
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(82.0,1084.0)
+:Sending Touch (ACTION_UP): 0:(82.50824,1084.8406)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(455.0,1135.0)
+:Sending Touch (ACTION_UP): 0:(455.0363,1140.6929)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(678.0,1141.0)
+:Sending Touch (ACTION_UP): 0:(688.5304,1139.6654)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(492.0,691.0)
+:Sending Touch (ACTION_MOVE): 0:(504.1566,695.0546)
+:Sending Touch (ACTION_MOVE): 0:(510.6031,697.5667)
+:Sending Touch (ACTION_MOVE): 0:(522.3449,701.95734)
+:Sending Touch (ACTION_MOVE): 0:(533.85974,704.6289)
+:Sending Touch (ACTION_MOVE): 0:(538.3285,707.3375)
+:Sending Touch (ACTION_MOVE): 0:(543.36786,708.8142)
+:Sending Touch (ACTION_MOVE): 0:(546.60913,708.8598)
+:Sending Touch (ACTION_MOVE): 0:(561.34576,710.596)
+:Sending Touch (ACTION_UP): 0:(570.724,713.9177)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Key (ACTION_DOWN): 148    // KEYCODE_NUMPAD_4
+:Sending Key (ACTION_UP): 148    // KEYCODE_NUMPAD_4
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(281.0,1341.0)
+:Sending Touch (ACTION_MOVE): 0:(282.54736,1343.6931)
+:Sending Touch (ACTION_MOVE): 0:(291.10828,1354.9827)
+:Sending Touch (ACTION_MOVE): 0:(297.65494,1368.7423)
+:Sending Touch (ACTION_MOVE): 0:(308.1793,1377.3595)
+:Sending Touch (ACTION_MOVE): 0:(317.54996,1388.9386)
+:Sending Touch (ACTION_MOVE): 0:(328.3024,1398.1809)
+:Sending Touch (ACTION_MOVE): 0:(331.23956,1411.0)
+:Sending Touch (ACTION_MOVE): 0:(340.01596,1411.0)
+:Sending Touch (ACTION_UP): 0:(351.01743,1411.0)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(320.0,211.0)
+:Sending Touch (ACTION_MOVE): 0:(316.0052,195.28961)
+:Sending Touch (ACTION_MOVE): 0:(309.2634,185.30269)
+:Sending Touch (ACTION_MOVE): 0:(305.41336,184.10297)
+:Sending Touch (ACTION_MOVE): 0:(299.49374,172.29169)
+:Sending Touch (ACTION_MOVE): 0:(294.36768,163.17851)
+:Sending Touch (ACTION_MOVE): 0:(292.4335,150.14699)
+:Sending Touch (ACTION_MOVE): 0:(290.3031,137.61478)
+:Sending Touch (ACTION_MOVE): 0:(285.21985,133.76135)
+:Sending Touch (ACTION_MOVE): 0:(284.82486,121.61411)
+:Sending Touch (ACTION_UP): 0:(282.90707,106.47671)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(445.0,554.0)
+:Sending Touch (ACTION_UP): 0:(446.4597,553.45905)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(404.0,238.0)
+:Sending Touch (ACTION_UP): 0:(396.42563,239.35097)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(19.0,345.0)
+:Sending Touch (ACTION_UP): 0:(36.857655,349.1407)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(365.0,700.0)
+:Sending Touch (ACTION_UP): 0:(365.35968,679.55664)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.zego.smoketest/.business.ui.PlayActivity } in package com.zego.smoketest
+    // Allowing start of Intent { cmp=com.zego.smoketest/.business.ui.PlayActivity } in package com.zego.smoketest
+:Sending Touch (ACTION_DOWN): 0:(230.0,1162.0)
+:Sending Touch (ACTION_UP): 0:(229.86488,1164.1914)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(160.0,339.0)
+:Sending Touch (ACTION_UP): 0:(157.37282,327.61768)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(114.0,868.0)
+:Sending Touch (ACTION_UP): 0:(125.205055,860.72754)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(584.0,962.0)
+:Sending Touch (ACTION_MOVE): 0:(579.4438,964.8916)
+:Sending Touch (ACTION_MOVE): 0:(569.5912,981.00836)
+:Sending Touch (ACTION_MOVE): 0:(557.09045,1002.32697)
+:Sending Touch (ACTION_UP): 0:(556.1757,1002.66656)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Touch (ACTION_DOWN): 0:(373.0,510.0)
+:Sending Touch (ACTION_UP): 0:(374.187,514.52435)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(172.0,1214.0)
+    //[calendar_time:2021-07-06 15:49:16.637  system_uptime:103606069]
+    // Sending event #200
+:Sending Touch (ACTION_UP): 0:(165.68443,1213.8711)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(708.0,1367.0)
+:Sending Touch (ACTION_UP): 0:(703.00226,1367.173)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(183.0,810.0)
+:Sending Touch (ACTION_UP): 0:(182.12988,809.8347)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(14.0,609.0)
+:Sending Touch (ACTION_UP): 0:(30.576122,609.7811)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(484.0,1287.0)
+:Sending Touch (ACTION_UP): 0:(489.6954,1295.4143)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(420.0,467.0)
+:Sending Touch (ACTION_MOVE): 0:(413.2483,465.67905)
+:Sending Touch (ACTION_MOVE): 0:(412.66757,459.87454)
+:Sending Touch (ACTION_MOVE): 0:(403.6401,451.48093)
+:Sending Touch (ACTION_MOVE): 0:(388.62772,444.19174)
+:Sending Touch (ACTION_MOVE): 0:(387.21448,441.56485)
+:Sending Touch (ACTION_MOVE): 0:(375.03653,439.3837)
+:Sending Touch (ACTION_MOVE): 0:(360.13135,435.8422)
+:Sending Touch (ACTION_MOVE): 0:(358.74478,430.65588)
+:Sending Touch (ACTION_UP): 0:(356.3229,423.13046)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 4    // KEYCODE_BACK
+:Sending Key (ACTION_UP): 4    // KEYCODE_BACK
+Sleeping for 500 milliseconds
+    // activityResuming(com.zego.smoketest)
+:Sending Touch (ACTION_DOWN): 0:(173.0,1110.0)
+:Sending Touch (ACTION_POINTER_DOWN 1): 0:(173.98337,1110.4403) 1:(399.0,339.0)
+:Sending Touch (ACTION_MOVE): 0:(174.5283,1116.0667) 1:(402.0348,332.52008)
+:Sending Touch (ACTION_MOVE): 0:(189.432,1117.4254) 1:(406.573,324.65085)
+:Sending Touch (ACTION_POINTER_UP 1): 0:(206.35791,1123.1138) 1:(407.1372,316.314)
+:Sending Touch (ACTION_UP): 0:(207.23044,1128.4164)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(457.0,747.0)
+:Sending Touch (ACTION_POINTER_DOWN 1): 0:(455.58316,749.59955) 1:(604.0,133.0)
+:Sending Touch (ACTION_MOVE): 0:(450.6166,750.43274) 1:(598.9181,114.16283)
+:Sending Touch (ACTION_MOVE): 0:(447.1962,755.3008) 1:(589.3143,112.22908)
+:Sending Touch (ACTION_MOVE): 0:(443.98224,757.96246) 1:(584.5275,110.61899)
+:Sending Touch (ACTION_MOVE): 0:(438.40088,760.2664) 1:(578.1655,110.09643)
+:Sending Touch (ACTION_MOVE): 0:(436.03766,766.426) 1:(566.17834,90.80013)
+:Sending Touch (ACTION_POINTER_UP 1): 0:(431.52725,767.53015) 1:(559.7769,73.50495)
+:Sending Touch (ACTION_UP): 0:(427.31174,774.5303)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(52.0,917.0)
+:Sending Touch (ACTION_UP): 0:(47.170242,916.1201)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(450.0,684.0)
+:Sending Touch (ACTION_UP): 0:(468.94095,690.41284)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.zego.smoketest/.business.ui.PlayActivity } in package com.zego.smoketest
+    // Allowing start of Intent { cmp=com.zego.smoketest/.business.ui.PlayActivity } in package com.zego.smoketest
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(127.0,2.0)
+:Sending Touch (ACTION_UP): 0:(114.284515,3.331783)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 167    // KEYCODE_CHANNEL_DOWN
+:Sending Key (ACTION_UP): 167    // KEYCODE_CHANNEL_DOWN
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(140.0,677.0)
+:Sending Touch (ACTION_MOVE): 0:(150.15349,684.11334)
+:Sending Touch (ACTION_MOVE): 0:(154.42903,689.5368)
+:Sending Touch (ACTION_MOVE): 0:(166.84766,692.8037)
+:Sending Touch (ACTION_MOVE): 0:(173.6173,694.0227)
+:Sending Touch (ACTION_MOVE): 0:(174.43922,699.5397)
+:Sending Touch (ACTION_MOVE): 0:(180.61935,699.9264)
+:Sending Touch (ACTION_MOVE): 0:(188.74187,705.32947)
+:Sending Touch (ACTION_MOVE): 0:(200.50398,709.3045)
+:Sending Touch (ACTION_UP): 0:(208.44807,711.6156)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(225.0,980.0)
+:Sending Touch (ACTION_UP): 0:(210.487,996.97675)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 7    // KEYCODE_0
+:Sending Key (ACTION_UP): 7    // KEYCODE_0
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(124.0,826.0)
+:Sending Touch (ACTION_MOVE): 0:(128.81781,832.50775)
+:Sending Touch (ACTION_UP): 0:(133.886,838.3295)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(717.0,10.0)
+:Sending Touch (ACTION_UP): 0:(712.8157,11.82342)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(425.0,1084.0)
+:Sending Touch (ACTION_UP): 0:(425.77963,1086.8806)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(296.0,1177.0)
+    //[calendar_time:2021-07-06 15:49:30.341  system_uptime:103619773]
+    // Sending event #300
+:Sending Touch (ACTION_UP): 0:(294.55408,1176.4055)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(658.0,1250.0)
+:Sending Touch (ACTION_UP): 0:(658.02246,1248.8315)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(658.0,515.0)
+:Sending Touch (ACTION_MOVE): 0:(642.59174,512.35455)
+:Sending Touch (ACTION_MOVE): 0:(636.1832,509.89713)
+:Sending Touch (ACTION_MOVE): 0:(635.4535,507.4029)
+:Sending Touch (ACTION_MOVE): 0:(622.35254,504.4105)
+:Sending Touch (ACTION_MOVE): 0:(611.1449,502.96268)
+:Sending Touch (ACTION_MOVE): 0:(605.7534,501.62857)
+:Sending Touch (ACTION_MOVE): 0:(595.69824,499.57886)
+:Sending Touch (ACTION_MOVE): 0:(591.3927,497.16876)
+:Sending Touch (ACTION_UP): 0:(588.0842,495.2181)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(74.0,620.0)
+:Sending Touch (ACTION_MOVE): 0:(72.80374,620.04614)
+:Sending Touch (ACTION_MOVE): 0:(71.9882,633.4869)
+:Sending Touch (ACTION_UP): 0:(67.20914,638.1245)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 87    // KEYCODE_MEDIA_NEXT
+:Sending Key (ACTION_UP): 87    // KEYCODE_MEDIA_NEXT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(718.0,538.0)
+:Sending Touch (ACTION_UP): 0:(717.24506,528.1352)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Touch (ACTION_DOWN): 0:(161.0,1211.0)
+:Sending Touch (ACTION_UP): 0:(154.77225,1217.9902)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(587.0,250.0)
+:Sending Touch (ACTION_UP): 0:(589.4797,248.65836)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 126    // KEYCODE_MEDIA_PLAY
+:Sending Key (ACTION_UP): 126    // KEYCODE_MEDIA_PLAY
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(174.0,1287.0)
+:Sending Touch (ACTION_UP): 0:(153.71991,1284.376)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(430.0,1108.0)
+:Sending Touch (ACTION_UP): 0:(430.5257,1098.4923)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(379.0,416.0)
+:Sending Touch (ACTION_MOVE): 0:(380.72287,414.27945)
+:Sending Touch (ACTION_MOVE): 0:(381.73343,411.2484)
+:Sending Touch (ACTION_MOVE): 0:(385.7051,409.40875)
+:Sending Touch (ACTION_MOVE): 0:(394.37225,409.2979)
+:Sending Touch (ACTION_MOVE): 0:(396.14523,405.57275)
+:Sending Touch (ACTION_MOVE): 0:(403.04196,398.02905)
+:Sending Touch (ACTION_MOVE): 0:(408.052,391.92096)
+:Sending Touch (ACTION_MOVE): 0:(408.267,390.31857)
+:Sending Touch (ACTION_UP): 0:(411.70343,385.709)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(573.0,591.0)
+:Sending Touch (ACTION_UP): 0:(569.7088,581.7333)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(291.0,500.0)
+    //[calendar_time:2021-07-06 15:49:41.458  system_uptime:103630890]
+    // Sending event #400
+:Sending Touch (ACTION_UP): 0:(289.0461,500.01645)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(591.0,1382.0)
+:Sending Touch (ACTION_UP): 0:(589.4654,1396.7721)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(153.0,989.0)
+:Sending Touch (ACTION_UP): 0:(151.58385,984.51447)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(184.0,437.0)
+:Sending Touch (ACTION_UP): 0:(187.16783,443.43768)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(173.0,238.0)
+:Sending Touch (ACTION_UP): 0:(172.93382,261.15366)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Key (ACTION_DOWN): 125    // KEYCODE_FORWARD
+:Sending Key (ACTION_UP): 125    // KEYCODE_FORWARD
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(422.0,340.0)
+:Sending Touch (ACTION_UP): 0:(418.7178,345.54303)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(574.0,1137.0)
+:Sending Touch (ACTION_UP): 0:(582.7548,1136.8743)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(294.0,180.0)
+:Sending Touch (ACTION_MOVE): 0:(297.64392,185.63635)
+:Sending Touch (ACTION_MOVE): 0:(302.16418,191.42485)
+:Sending Touch (ACTION_MOVE): 0:(317.15262,194.00775)
+:Sending Touch (ACTION_MOVE): 0:(332.99976,203.2195)
+:Sending Touch (ACTION_MOVE): 0:(342.38315,206.94656)
+:Sending Touch (ACTION_MOVE): 0:(363.46545,211.90494)
+:Sending Touch (ACTION_MOVE): 0:(363.96606,218.6758)
+:Sending Touch (ACTION_UP): 0:(381.9285,220.3032)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(659.0,278.0)
+:Sending Touch (ACTION_UP): 0:(666.9492,279.0851)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(238.0,970.0)
+:Sending Touch (ACTION_UP): 0:(242.77306,968.58386)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(528.0,1098.0)
+:Sending Touch (ACTION_UP): 0:(527.98706,1117.4081)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(259.0,606.0)
+:Sending Touch (ACTION_UP): 0:(265.79797,607.57495)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(464.0,654.0)
+:Sending Touch (ACTION_UP): 0:(463.69778,658.3335)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(629.0,1095.0)
+:Sending Touch (ACTION_UP): 0:(626.16644,1081.8398)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(310.0,930.0)
+:Sending Touch (ACTION_MOVE): 0:(289.66168,919.1616)
+:Sending Touch (ACTION_MOVE): 0:(288.84506,917.7708)
+:Sending Touch (ACTION_MOVE): 0:(281.02878,906.93176)
+:Sending Touch (ACTION_UP): 0:(261.66373,906.66345)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(551.0,1077.0)
+:Sending Touch (ACTION_UP): 0:(537.45953,1089.6838)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(268.0,868.0)
+:Sending Touch (ACTION_UP): 0:(267.53064,870.9906)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(335.0,918.0)
+:Sending Touch (ACTION_MOVE): 0:(333.65768,912.97253)
+:Sending Touch (ACTION_UP): 0:(324.4129,902.28345)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(207.0,1346.0)
+:Sending Touch (ACTION_UP): 0:(210.12846,1358.0939)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(560.0,102.0)
+:Sending Touch (ACTION_MOVE): 0:(576.2258,116.02223)
+:Sending Touch (ACTION_UP): 0:(579.0992,127.633545)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(611.0,1148.0)
+:Sending Touch (ACTION_UP): 0:(610.4116,1130.9231)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(372.0,1326.0)
+:Sending Touch (ACTION_UP): 0:(378.09192,1314.2465)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 203    // KEYCODE_BUTTON_16
+:Sending Key (ACTION_UP): 203    // KEYCODE_BUTTON_16
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(162.0,1336.0)
+:Sending Touch (ACTION_UP): 0:(157.60104,1343.0464)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(251.0,20.0)
+:Sending Touch (ACTION_UP): 0:(243.17961,5.2933674)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(689.0,263.0)
+:Sending Touch (ACTION_UP): 0:(678.11194,259.28906)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 71    // KEYCODE_LEFT_BRACKET
+:Sending Key (ACTION_UP): 71    // KEYCODE_LEFT_BRACKET
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+    //[calendar_time:2021-07-06 15:49:59.781  system_uptime:103649214]
+    // Sending event #500
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(190.0,1148.0)
+:Sending Touch (ACTION_MOVE): 0:(187.1795,1140.8628)
+:Sending Touch (ACTION_UP): 0:(184.44313,1140.2783)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 171    // KEYCODE_WINDOW
+:Sending Key (ACTION_UP): 171    // KEYCODE_WINDOW
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(129.0,509.0)
+:Sending Touch (ACTION_UP): 0:(127.30475,517.3935)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 250    // KEYCODE_TV_INPUT_COMPONENT_2
+:Sending Key (ACTION_UP): 250    // KEYCODE_TV_INPUT_COMPONENT_2
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(583.0,754.0)
+:Sending Touch (ACTION_MOVE): 0:(582.907,763.2137)
+:Sending Touch (ACTION_MOVE): 0:(582.5351,764.31854)
+:Sending Touch (ACTION_MOVE): 0:(582.2358,770.0453)
+:Sending Touch (ACTION_MOVE): 0:(581.835,780.2856)
+:Sending Touch (ACTION_MOVE): 0:(581.76886,781.136)
+:Sending Touch (ACTION_MOVE): 0:(581.16486,790.32806)
+:Sending Touch (ACTION_UP): 0:(580.4256,794.575)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(314.0,1140.0)
+:Sending Touch (ACTION_MOVE): 0:(304.1055,1135.4402)
+:Sending Touch (ACTION_MOVE): 0:(295.93228,1130.9706)
+:Sending Touch (ACTION_MOVE): 0:(292.04883,1126.4215)
+:Sending Touch (ACTION_MOVE): 0:(283.4066,1120.807)
+:Sending Touch (ACTION_MOVE): 0:(280.27106,1118.0172)
+:Sending Touch (ACTION_MOVE): 0:(273.3446,1110.3835)
+:Sending Touch (ACTION_MOVE): 0:(266.33075,1106.4982)
+:Sending Touch (ACTION_MOVE): 0:(257.44632,1102.4983)
+:Sending Touch (ACTION_MOVE): 0:(255.60611,1096.9037)
+:Sending Touch (ACTION_UP): 0:(254.77846,1095.473)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(601.0,919.0)
+:Sending Touch (ACTION_UP): 0:(608.2759,919.96387)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(614.0,783.0)
+:Sending Touch (ACTION_UP): 0:(600.3641,784.8652)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(193.0,1066.0)
+:Sending Touch (ACTION_MOVE): 0:(211.78835,1066.1455)
+:Sending Touch (ACTION_MOVE): 0:(227.90215,1071.2794)
+:Sending Touch (ACTION_MOVE): 0:(240.17642,1080.6642)
+:Sending Touch (ACTION_MOVE): 0:(241.09047,1089.303)
+:Sending Touch (ACTION_MOVE): 0:(243.97556,1090.7004)
+:Sending Touch (ACTION_MOVE): 0:(249.93272,1094.6537)
+:Sending Touch (ACTION_MOVE): 0:(267.82388,1095.6162)
+:Sending Touch (ACTION_MOVE): 0:(270.0839,1100.849)
+:Sending Touch (ACTION_UP): 0:(289.92932,1101.7268)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(639.0,760.0)
+:Sending Touch (ACTION_MOVE): 0:(646.67334,754.7338)
+:Sending Touch (ACTION_MOVE): 0:(667.31366,747.61456)
+:Sending Touch (ACTION_MOVE): 0:(686.01465,741.70447)
+:Sending Touch (ACTION_MOVE): 0:(689.1618,734.7141)
+:Sending Touch (ACTION_MOVE): 0:(699.6229,728.4742)
+:Sending Touch (ACTION_MOVE): 0:(700.0769,726.13)
+:Sending Touch (ACTION_MOVE): 0:(719.30994,722.3834)
+:Sending Touch (ACTION_MOVE): 0:(720.0,720.68665)
+:Sending Touch (ACTION_MOVE): 0:(720.0,712.0481)
+:Sending Touch (ACTION_UP): 0:(720.0,709.0005)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(571.0,340.0)
+:Sending Touch (ACTION_UP): 0:(561.4001,328.2162)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(256.0,823.0)
+:Sending Touch (ACTION_UP): 0:(247.74251,816.7951)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(237.0,1092.0)
+:Sending Touch (ACTION_UP): 0:(242.41847,1091.7117)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(383.0,1144.0)
+:Sending Touch (ACTION_MOVE): 0:(383.24246,1132.7352)
+:Sending Touch (ACTION_MOVE): 0:(394.37082,1123.495)
+:Sending Touch (ACTION_MOVE): 0:(410.8854,1117.3397)
+:Sending Touch (ACTION_MOVE): 0:(429.49423,1109.6775)
+:Sending Touch (ACTION_MOVE): 0:(444.9908,1104.5067)
+:Sending Touch (ACTION_MOVE): 0:(449.9603,1094.1799)
+:Sending Touch (ACTION_UP): 0:(451.8248,1090.5142)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(370.0,1403.0)
+:Sending Touch (ACTION_MOVE): 0:(381.46954,1405.8824)
+:Sending Touch (ACTION_MOVE): 0:(397.6937,1408.3483)
+:Sending Touch (ACTION_UP): 0:(407.42545,1409.0099)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+    //[calendar_time:2021-07-06 15:50:08.812  system_uptime:103658245]
+    // Sending event #600
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(546.0,1394.0)
+:Sending Touch (ACTION_UP): 0:(541.20514,1411.0)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 4    // KEYCODE_BACK
+:Sending Key (ACTION_UP): 4    // KEYCODE_BACK
+Sleeping for 500 milliseconds
+    // activityResuming(com.zego.smoketest)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(276.0,39.0)
+:Sending Touch (ACTION_UP): 0:(282.0443,27.733929)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(591.0,465.0)
+:Sending Touch (ACTION_UP): 0:(584.1167,452.9147)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(216.0,371.0)
+:Sending Touch (ACTION_UP): 0:(205.84819,361.29892)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(25.0,656.0)
+:Sending Touch (ACTION_UP): 0:(25.152512,655.5801)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(290.0,77.0)
+:Sending Touch (ACTION_MOVE): 0:(290.16336,81.21703)
+:Sending Touch (ACTION_MOVE): 0:(291.69138,86.28614)
+:Sending Touch (ACTION_MOVE): 0:(292.88022,89.418175)
+:Sending Touch (ACTION_UP): 0:(293.81662,95.68733)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(54.0,669.0)
+:Sending Touch (ACTION_MOVE): 0:(58.62973,688.6082)
+:Sending Touch (ACTION_MOVE): 0:(59.848583,708.3986)
+:Sending Touch (ACTION_MOVE): 0:(64.95923,717.61816)
+:Sending Touch (ACTION_MOVE): 0:(71.52477,727.3716)
+:Sending Touch (ACTION_MOVE): 0:(75.0157,748.6798)
+:Sending Touch (ACTION_MOVE): 0:(81.41977,769.03015)
+:Sending Touch (ACTION_MOVE): 0:(87.15343,778.5086)
+:Sending Touch (ACTION_MOVE): 0:(88.994865,788.8687)
+:Sending Touch (ACTION_UP): 0:(94.11455,801.9058)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(438.0,1158.0)
+:Sending Touch (ACTION_MOVE): 0:(448.02386,1162.5541)
+:Sending Touch (ACTION_MOVE): 0:(449.71817,1165.0917)
+:Sending Touch (ACTION_MOVE): 0:(453.94135,1177.1525)
+:Sending Touch (ACTION_MOVE): 0:(458.20157,1178.357)
+:Sending Touch (ACTION_MOVE): 0:(463.59433,1188.9724)
+:Sending Touch (ACTION_UP): 0:(471.0291,1201.8297)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(21.0,1010.0)
+:Sending Touch (ACTION_MOVE): 0:(20.52155,1024.2593)
+:Sending Touch (ACTION_MOVE): 0:(19.515013,1030.7085)
+:Sending Touch (ACTION_MOVE): 0:(19.019423,1036.7922)
+:Sending Touch (ACTION_MOVE): 0:(18.061829,1051.5848)
+:Sending Touch (ACTION_MOVE): 0:(17.343801,1067.2047)
+:Sending Touch (ACTION_MOVE): 0:(16.897945,1068.7458)
+:Sending Touch (ACTION_MOVE): 0:(16.803036,1076.8917)
+:Sending Touch (ACTION_MOVE): 0:(15.948648,1093.824)
+:Sending Touch (ACTION_UP): 0:(15.059424,1098.7892)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(107.0,852.0)
+:Sending Touch (ACTION_MOVE): 0:(98.17031,850.98816)
+:Sending Touch (ACTION_MOVE): 0:(87.996346,850.4692)
+:Sending Touch (ACTION_MOVE): 0:(75.432274,848.8486)
+:Sending Touch (ACTION_MOVE): 0:(65.65795,848.04224)
+:Sending Touch (ACTION_MOVE): 0:(62.000996,846.97327)
+:Sending Touch (ACTION_MOVE): 0:(58.017498,845.45154)
+:Sending Touch (ACTION_MOVE): 0:(45.07796,844.92645)
+:Sending Touch (ACTION_UP): 0:(44.140423,844.26715)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(568.0,292.0)
+:Sending Touch (ACTION_UP): 0:(567.39087,284.29913)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(228.0,358.0)
+    //[calendar_time:2021-07-06 15:50:17.273  system_uptime:103666705]
+    // Sending event #700
+:Sending Touch (ACTION_UP): 0:(217.09357,354.04434)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Touch (ACTION_DOWN): 0:(476.0,238.0)
+:Sending Touch (ACTION_UP): 0:(462.93665,234.74022)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Touch (ACTION_DOWN): 0:(482.0,1345.0)
+:Sending Touch (ACTION_UP): 0:(462.32672,1339.7477)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(680.0,940.0)
+:Sending Touch (ACTION_MOVE): 0:(670.609,963.08246)
+:Sending Touch (ACTION_UP): 0:(669.81805,980.93854)
+Sleeping for 500 milliseconds
+    // activityResuming(com.zego.smoketest)
+:Sending Touch (ACTION_DOWN): 0:(223.0,442.0)
+:Sending Touch (ACTION_UP): 0:(224.1865,464.64938)
+Sleeping for 500 milliseconds
+    // Allowing start of Intent { cmp=com.zego.smoketest/.business.ui.IMActivity } in package com.zego.smoketest
+    // Allowing start of Intent { cmp=com.zego.smoketest/.business.ui.IMActivity } in package com.zego.smoketest
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(281.0,1371.0)
+:Sending Touch (ACTION_UP): 0:(280.71097,1367.6294)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(492.0,1132.0)
+:Sending Touch (ACTION_UP): 0:(480.3923,1131.4886)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(76.0,649.0)
+:Sending Touch (ACTION_UP): 0:(76.039276,653.99335)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(214.0,1187.0)
+:Sending Touch (ACTION_UP): 0:(216.99712,1185.5497)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 158    // KEYCODE_NUMPAD_DOT
+:Sending Key (ACTION_UP): 158    // KEYCODE_NUMPAD_DOT
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(243.0,198.0)
+:Sending Touch (ACTION_MOVE): 0:(263.09293,201.30719)
+:Sending Touch (ACTION_MOVE): 0:(284.44522,201.45988)
+:Sending Touch (ACTION_MOVE): 0:(300.2582,204.79498)
+:Sending Touch (ACTION_MOVE): 0:(307.79437,206.0355)
+:Sending Touch (ACTION_MOVE): 0:(322.8996,209.63396)
+:Sending Touch (ACTION_MOVE): 0:(331.82196,211.4694)
+:Sending Touch (ACTION_UP): 0:(341.15903,214.14641)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(536.0,144.0)
+:Sending Touch (ACTION_UP): 0:(555.68097,137.4313)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(313.0,94.0)
+:Sending Touch (ACTION_UP): 0:(313.25455,107.80499)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(202.0,1101.0)
+:Sending Touch (ACTION_MOVE): 0:(202.87943,1103.3402)
+:Sending Touch (ACTION_MOVE): 0:(206.53104,1107.8502)
+:Sending Touch (ACTION_MOVE): 0:(222.02708,1110.6732)
+:Sending Touch (ACTION_MOVE): 0:(232.99791,1111.2699)
+:Sending Touch (ACTION_UP): 0:(244.4295,1118.262)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(465.0,364.0)
+:Sending Touch (ACTION_UP): 0:(467.354,359.36566)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(186.0,1031.0)
+:Sending Touch (ACTION_UP): 0:(186.75212,1026.9128)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(633.0,502.0)
+:Sending Touch (ACTION_UP): 0:(633.47235,502.54642)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(77.0,1020.0)
+:Sending Touch (ACTION_MOVE): 0:(67.74102,1019.43274)
+:Sending Touch (ACTION_MOVE): 0:(58.009995,1012.857)
+:Sending Touch (ACTION_MOVE): 0:(53.730137,1011.355)
+:Sending Touch (ACTION_MOVE): 0:(44.58186,1007.89355)
+:Sending Touch (ACTION_MOVE): 0:(41.15515,1002.459)
+:Sending Touch (ACTION_MOVE): 0:(33.093884,998.09717)
+:Sending Touch (ACTION_MOVE): 0:(22.92669,997.5057)
+:Sending Touch (ACTION_MOVE): 0:(13.471149,997.37396)
+:Sending Touch (ACTION_UP): 0:(10.430174,992.3797)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(132.0,1348.0)
+:Sending Touch (ACTION_UP): 0:(119.84624,1343.273)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(210.0,752.0)
+:Sending Touch (ACTION_UP): 0:(209.9769,751.8899)
+    //[calendar_time:2021-07-06 15:50:30.508  system_uptime:103679941]
+    // Sending event #800
+Sleeping for 500 milliseconds
+    //[calendar_time:2021-07-06 15:50:31.012  system_uptime:103680444]
+    // Sending event #800
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Touch (ACTION_DOWN): 0:(639.0,575.0)
+:Sending Touch (ACTION_POINTER_DOWN 1): 0:(637.67706,577.32983) 1:(112.0,782.0)
+:Sending Touch (ACTION_MOVE): 0:(634.53204,577.88214) 1:(127.54667,775.1203)
+:Sending Touch (ACTION_MOVE): 0:(628.77527,579.16364) 1:(142.24524,769.2417)
+:Sending Touch (ACTION_MOVE): 0:(626.6034,583.0725) 1:(164.54231,762.13196)
+:Sending Touch (ACTION_MOVE): 0:(624.6193,586.96857) 1:(171.75452,753.6927)
+:Sending Touch (ACTION_MOVE): 0:(624.4517,589.64) 1:(173.1645,751.8581)
+:Sending Touch (ACTION_MOVE): 0:(623.3439,594.3704) 1:(179.61256,746.93787)
+:Sending Touch (ACTION_MOVE): 0:(617.4595,594.6886) 1:(193.12851,743.0703)
+:Sending Touch (ACTION_MOVE): 0:(612.44275,597.3973) 1:(206.26825,742.57605)
+:Sending Touch (ACTION_POINTER_UP 1): 0:(610.45856,602.4115) 1:(215.05835,735.32385)
+:Sending Touch (ACTION_UP): 0:(609.60364,603.1016)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 24    // KEYCODE_VOLUME_UP
+:Sending Key (ACTION_UP): 24    // KEYCODE_VOLUME_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(358.0,207.0)
+:Sending Touch (ACTION_MOVE): 0:(372.69098,215.96805)
+:Sending Touch (ACTION_MOVE): 0:(384.72293,218.32936)
+:Sending Touch (ACTION_MOVE): 0:(397.32718,227.69437)
+:Sending Touch (ACTION_MOVE): 0:(400.3126,229.86385)
+:Sending Touch (ACTION_MOVE): 0:(414.873,242.21155)
+:Sending Touch (ACTION_MOVE): 0:(419.65247,246.71736)
+:Sending Touch (ACTION_MOVE): 0:(440.5851,255.78604)
+:Sending Touch (ACTION_MOVE): 0:(441.25842,264.02777)
+:Sending Touch (ACTION_UP): 0:(451.02768,273.468)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(509.0,440.0)
+:Sending Touch (ACTION_MOVE): 0:(508.43137,439.66254)
+:Sending Touch (ACTION_MOVE): 0:(507.24948,438.93585)
+:Sending Touch (ACTION_MOVE): 0:(506.3751,438.1582)
+:Sending Touch (ACTION_MOVE): 0:(505.41068,438.11295)
+:Sending Touch (ACTION_MOVE): 0:(504.55023,437.9992)
+:Sending Touch (ACTION_MOVE): 0:(504.1603,437.69794)
+:Sending Touch (ACTION_MOVE): 0:(502.56284,437.3479)
+:Sending Touch (ACTION_MOVE): 0:(502.3149,436.66574)
+:Sending Touch (ACTION_UP): 0:(501.30273,436.0096)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(412.0,521.0)
+:Sending Touch (ACTION_UP): 0:(398.32068,510.2723)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
+:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 2    // KEYCODE_SOFT_RIGHT
+:Sending Key (ACTION_UP): 2    // KEYCODE_SOFT_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(410.0,698.0)
+:Sending Touch (ACTION_UP): 0:(395.63297,698.80255)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Touch (ACTION_DOWN): 0:(641.0,1169.0)
+:Sending Touch (ACTION_MOVE): 0:(645.2696,1163.885)
+:Sending Touch (ACTION_MOVE): 0:(650.1847,1159.3525)
+:Sending Touch (ACTION_MOVE): 0:(651.49786,1155.9609)
+:Sending Touch (ACTION_MOVE): 0:(651.8158,1152.4376)
+:Sending Touch (ACTION_MOVE): 0:(656.07556,1148.9034)
+:Sending Touch (ACTION_MOVE): 0:(657.0139,1145.6694)
+:Sending Touch (ACTION_MOVE): 0:(657.1051,1141.6157)
+:Sending Touch (ACTION_MOVE): 0:(660.65155,1139.897)
+:Sending Touch (ACTION_UP): 0:(663.8566,1138.4043)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(170.0,1166.0)
+:Sending Touch (ACTION_MOVE): 0:(185.33113,1168.9135)
+:Sending Touch (ACTION_MOVE): 0:(202.30923,1174.222)
+:Sending Touch (ACTION_MOVE): 0:(218.13776,1177.9601)
+:Sending Touch (ACTION_MOVE): 0:(218.58319,1182.1643)
+:Sending Touch (ACTION_MOVE): 0:(226.2131,1183.2646)
+:Sending Touch (ACTION_MOVE): 0:(243.79092,1186.4935)
+:Sending Touch (ACTION_UP): 0:(251.55331,1188.6571)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(513.0,494.0)
+:Sending Touch (ACTION_UP): 0:(512.18744,483.19183)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(518.0,885.0)
+:Sending Touch (ACTION_UP): 0:(511.63232,888.2314)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(210.0,972.0)
+:Sending Touch (ACTION_MOVE): 0:(209.83727,958.828)
+:Sending Touch (ACTION_MOVE): 0:(209.70424,941.5601)
+:Sending Touch (ACTION_MOVE): 0:(209.42322,922.60114)
+:Sending Touch (ACTION_MOVE): 0:(209.11691,911.5004)
+:Sending Touch (ACTION_MOVE): 0:(208.9041,900.589)
+:Sending Touch (ACTION_MOVE): 0:(208.68744,889.2336)
+:Sending Touch (ACTION_MOVE): 0:(208.49089,880.5045)
+:Sending Touch (ACTION_UP): 0:(208.22382,865.3228)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(106.0,1328.0)
+:Sending Touch (ACTION_UP): 0:(101.33156,1343.9448)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(680.0,362.0)
+:Sending Touch (ACTION_UP): 0:(686.81775,351.88394)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+    //[calendar_time:2021-07-06 15:50:44.867  system_uptime:103694300]
+    // Sending event #900
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(306.0,925.0)
+:Sending Touch (ACTION_UP): 0:(304.018,922.4126)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(372.0,203.0)
+:Sending Touch (ACTION_UP): 0:(372.4309,214.14502)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(332.0,994.0)
+:Sending Touch (ACTION_MOVE): 0:(334.7695,996.5303)
+:Sending Touch (ACTION_UP): 0:(337.94373,1003.9409)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(181.0,595.0)
+:Sending Touch (ACTION_MOVE): 0:(182.99458,597.7104)
+:Sending Touch (ACTION_MOVE): 0:(192.23526,601.61414)
+:Sending Touch (ACTION_MOVE): 0:(198.36511,601.6384)
+:Sending Touch (ACTION_MOVE): 0:(204.58054,605.1965)
+:Sending Touch (ACTION_MOVE): 0:(209.55649,606.6222)
+:Sending Touch (ACTION_MOVE): 0:(213.37138,608.04126)
+:Sending Touch (ACTION_UP): 0:(216.46335,610.34784)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 86    // KEYCODE_MEDIA_STOP
+:Sending Key (ACTION_UP): 86    // KEYCODE_MEDIA_STOP
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(645.0,1347.0)
+:Sending Touch (ACTION_MOVE): 0:(624.97205,1341.1716)
+:Sending Touch (ACTION_MOVE): 0:(603.7949,1340.0093)
+:Sending Touch (ACTION_MOVE): 0:(600.83105,1337.3317)
+:Sending Touch (ACTION_MOVE): 0:(582.2481,1330.6498)
+:Sending Touch (ACTION_MOVE): 0:(574.6003,1328.7305)
+:Sending Touch (ACTION_MOVE): 0:(552.5604,1324.3529)
+:Sending Touch (ACTION_MOVE): 0:(543.5785,1319.2747)
+:Sending Touch (ACTION_MOVE): 0:(532.7699,1318.1884)
+:Sending Touch (ACTION_UP): 0:(511.9435,1314.7415)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(78.0,918.0)
+:Sending Touch (ACTION_UP): 0:(76.121445,912.6298)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(477.0,256.0)
+:Sending Touch (ACTION_MOVE): 0:(455.443,255.20523)
+:Sending Touch (ACTION_MOVE): 0:(444.7667,234.85289)
+:Sending Touch (ACTION_MOVE): 0:(424.71118,211.77843)
+:Sending Touch (ACTION_MOVE): 0:(403.7763,191.11493)
+:Sending Touch (ACTION_UP): 0:(386.92792,184.41946)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(430.0,523.0)
+:Sending Touch (ACTION_MOVE): 0:(432.24213,530.10815)
+:Sending Touch (ACTION_MOVE): 0:(434.1277,541.45886)
+:Sending Touch (ACTION_MOVE): 0:(435.824,542.09375)
+:Sending Touch (ACTION_MOVE): 0:(438.88068,547.171)
+:Sending Touch (ACTION_MOVE): 0:(440.978,549.3514)
+:Sending Touch (ACTION_MOVE): 0:(443.45453,565.76556)
+:Sending Touch (ACTION_MOVE): 0:(445.97647,566.52234)
+:Sending Touch (ACTION_UP): 0:(449.1905,570.6873)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(562.0,680.0)
+:Sending Touch (ACTION_UP): 0:(577.5026,681.1547)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(252.0,888.0)
+:Sending Touch (ACTION_MOVE): 0:(254.53462,891.3734)
+:Sending Touch (ACTION_MOVE): 0:(260.0176,893.6507)
+:Sending Touch (ACTION_MOVE): 0:(265.29117,907.9521)
+:Sending Touch (ACTION_MOVE): 0:(267.9059,921.19556)
+:Sending Touch (ACTION_MOVE): 0:(270.59973,942.95447)
+:Sending Touch (ACTION_MOVE): 0:(273.37088,948.90955)
+:Sending Touch (ACTION_MOVE): 0:(275.45282,962.88416)
+:Sending Touch (ACTION_MOVE): 0:(278.1338,967.2319)
+:Sending Touch (ACTION_MOVE): 0:(278.42792,976.17224)
+:Sending Touch (ACTION_UP): 0:(282.87723,980.2913)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+    //[calendar_time:2021-07-06 15:50:52.320  system_uptime:103701752]
+    // Sending event #1000
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(716.0,888.0)
+:Sending Touch (ACTION_MOVE): 0:(720.0,892.5663)
+:Sending Touch (ACTION_MOVE): 0:(720.0,896.3602)
+:Sending Touch (ACTION_UP): 0:(720.0,898.5371)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(169.0,384.0)
+:Sending Touch (ACTION_UP): 0:(180.14977,387.55176)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(179.0,1098.0)
+:Sending Touch (ACTION_MOVE): 0:(190.57983,1088.7856)
+:Sending Touch (ACTION_MOVE): 0:(200.91849,1087.816)
+:Sending Touch (ACTION_MOVE): 0:(211.76587,1083.1027)
+:Sending Touch (ACTION_MOVE): 0:(216.28749,1076.521)
+:Sending Touch (ACTION_UP): 0:(234.65414,1070.3359)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(655.0,136.0)
+:Sending Touch (ACTION_UP): 0:(648.1847,135.09146)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(180.0,1402.0)
+:Sending Touch (ACTION_MOVE): 0:(165.191,1392.959)
+:Sending Touch (ACTION_MOVE): 0:(152.05566,1381.2684)
+:Sending Touch (ACTION_UP): 0:(144.46272,1368.951)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(27.0,570.0)
+:Sending Touch (ACTION_MOVE): 0:(33.8527,577.4802)
+:Sending Touch (ACTION_MOVE): 0:(44.132484,590.60583)
+:Sending Touch (ACTION_UP): 0:(58.236538,603.81177)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(76.0,634.0)
+:Sending Touch (ACTION_UP): 0:(72.35653,640.77185)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(699.0,925.0)
+:Sending Touch (ACTION_UP): 0:(700.6843,927.74774)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(198.0,747.0)
+:Sending Touch (ACTION_UP): 0:(207.55211,730.6652)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(464.0,552.0)
+:Sending Touch (ACTION_UP): 0:(470.76254,559.0329)
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(703.0,527.0)
+:Sending Touch (ACTION_UP): 0:(697.9329,526.59076)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(563.0,329.0)
+:Sending Touch (ACTION_UP): 0:(566.25995,331.81796)
+Sleeping for 500 milliseconds
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 500 milliseconds
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 500 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+    //[calendar_time:2021-07-06 15:51:01.870  system_uptime:103711303]
+    // Sending event #1100
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-5.0)
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(84.0,731.0)
+:Sending Touch (ACTION_MOVE): 0:(81.09058,747.068)
+:Sending Touch (ACTION_UP): 0:(79.238884,758.7818)
+Sleeping for 500 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(171.0,413.0)
+:Sending Touch (ACTION_MOVE): 0:(175.2528,419.82095)
+:Sending Touch (ACTION_MOVE): 0:(178.97815,435.70172)
+:Sending Touch (ACTION_MOVE): 0:(181.65533,454.97504)
+:Sending Touch (ACTION_MOVE): 0:(185.80946,464.9552)
+:Sending Touch (ACTION_UP): 0:(188.85912,470.69772)
+Sleeping for 500 milliseconds
