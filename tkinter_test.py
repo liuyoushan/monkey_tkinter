@@ -10,9 +10,9 @@ import tkinter.messagebox  # 弹出对话框
 from tkinter import *  # 运行按钮Button用到这个库
 from tkinter import ttk  # 下拉框控件要用ttk
 
-
 from os import path
 import sys
+
 bundle_dir = getattr(sys, '_MEIPASS', path.abspath(path.dirname(__file__)))
 path_to_dat = path.join(bundle_dir, 'img.png')
 
@@ -57,6 +57,7 @@ class MainPage:
                                      # 字体和字号
                                      fg="white")  # 前景色
             theLabel.pack()
+
         img()
 
         # ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇按钮控件⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
@@ -138,7 +139,8 @@ class MainPage:
 
         # 创建表格控件
         self.tree_date = ttk.Treeview(self.root)
-        tree_date=self.tree_date
+        tree_date = self.tree_date
+
         # 创建表格显示日志异常信息
         def biaoge():
             # 创建表格

@@ -15,7 +15,7 @@
   bash arg: -v
   bash arg: -v
   bash arg: 111
-:Monkey: seed=1625621732601 count=111
+:Monkey: seed=1625775124477 count=111
 :AllowPackage: com.zego.smoketest
 :IncludeCategory: android.intent.category.LAUNCHER
 :IncludeCategory: android.intent.category.MONKEY
@@ -131,7 +131,7 @@
 //   - NOT USING main activity com.xiaomi.drivemode.DriveModeAnimActivity (from package com.xiaomi.drivemode)
 //   - NOT USING main activity com.xiaomi.drivemode.MiuiLabDriveModeActivity (from package com.xiaomi.drivemode)
 //   - NOT USING main activity com.xiaomi.vipaccount.ui.splash.SplashActivity (from package com.xiaomi.vipaccount)
-// Seeded: 1625621732601
+// Seeded: 1625775124477
 // Event percentages:
 //   0: 10.0%
 //   1: 10.588236%
@@ -149,149 +149,110 @@
     // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zego.smoketest/.business.ui.MainActivity } in package com.zego.smoketest
     // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zego.smoketest/.business.ui.MainActivity } in package com.zego.smoketest
 Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
-:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+:Sending Touch (ACTION_DOWN): 0:(97.0,1079.0)
+:Sending Touch (ACTION_UP): 0:(113.67291,1082.7645)
 Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 156    // KEYCODE_NUMPAD_SUBTRACT
-:Sending Key (ACTION_UP): 156    // KEYCODE_NUMPAD_SUBTRACT
+:Sending Key (ACTION_DOWN): 119    // KEYCODE_FUNCTION
+:Sending Key (ACTION_UP): 119    // KEYCODE_FUNCTION
 Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
-:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
-Sleeping for 111 milliseconds
-    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
-:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
-:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
-:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
-Sleeping for 111 milliseconds
-:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
-:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
-:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
-:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
 :Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
-:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
-:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
-:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
-:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
-:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
-:Sending Touch (ACTION_DOWN): 0:(172.0,1241.0)
-:Sending Touch (ACTION_UP): 0:(178.3542,1233.4711)
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
-:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 137    // KEYCODE_F7
-:Sending Key (ACTION_UP): 137    // KEYCODE_F7
-Sleeping for 111 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
 :Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
-:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
-:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
-:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
-:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
+:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
+Sleeping for 111 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
 :Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
-:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
-:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
-:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
-:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
-:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
-:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
-Sleeping for 111 milliseconds
-:Sending Touch (ACTION_DOWN): 0:(67.0,852.0)
-:Sending Touch (ACTION_UP): 0:(66.0851,851.7397)
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 237    // KEYCODE_TV_SATELLITE
-:Sending Key (ACTION_UP): 237    // KEYCODE_TV_SATELLITE
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
-:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(349.0,331.0)
+:Sending Touch (ACTION_UP): 0:(350.48575,312.80453)
 Sleeping for 111 milliseconds
 :Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
 :Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
 Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 16    // KEYCODE_9
-:Sending Key (ACTION_UP): 16    // KEYCODE_9
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 162    // KEYCODE_NUMPAD_LEFT_PAREN
-:Sending Key (ACTION_UP): 162    // KEYCODE_NUMPAD_LEFT_PAREN
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
-:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
-Sleeping for 111 milliseconds
-    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
-:Sending Touch (ACTION_DOWN): 0:(112.0,1328.0)
-:Sending Touch (ACTION_UP): 0:(118.92637,1316.1947)
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 82    // KEYCODE_MENU
-:Sending Key (ACTION_UP): 82    // KEYCODE_MENU
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
-:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
-Sleeping for 111 milliseconds
-:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
-:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
-:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
-:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
-:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
 :Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
-:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
 :Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
-:Sending Trackball (ACTION_MOVE): 0:(1.0,-5.0)
-:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
-:Sending Touch (ACTION_DOWN): 0:(33.0,1177.0)
-:Sending Touch (ACTION_MOVE): 0:(29.682955,1177.6517)
-:Sending Touch (ACTION_MOVE): 0:(22.815022,1180.9535)
-:Sending Touch (ACTION_MOVE): 0:(20.633738,1186.766)
-:Sending Touch (ACTION_MOVE): 0:(7.7941256,1195.4739)
-:Sending Touch (ACTION_MOVE): 0:(0.0,1197.9879)
-:Sending Touch (ACTION_MOVE): 0:(0.0,1200.8582)
-:Sending Touch (ACTION_MOVE): 0:(0.0,1209.283)
-:Sending Touch (ACTION_MOVE): 0:(0.0,1214.9833)
-:Sending Touch (ACTION_MOVE): 0:(0.0,1225.6927)
-:Sending Touch (ACTION_UP): 0:(0.0,1227.9137)
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
-:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
-Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
-:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+:Sending Key (ACTION_DOWN): 23    // KEYCODE_DPAD_CENTER
+:Sending Key (ACTION_UP): 23    // KEYCODE_DPAD_CENTER
 Sleeping for 111 milliseconds
 :Sending Flip keyboardOpen=false
 Got IOException performing flipjava.io.IOException: write failed: EINVAL (Invalid argument)
     // Injection Failed
 Sleeping for 111 milliseconds
-:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
-:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
 :Sending Trackball (ACTION_MOVE): 0:(-1.0,-2.0)
-:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
-:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
-:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
-:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
-:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-5.0)
 :Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
-:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
-:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
-:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
-:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
-:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-3.0)
+:Sending Key (ACTION_DOWN): 22    // KEYCODE_DPAD_RIGHT
+:Sending Key (ACTION_UP): 22    // KEYCODE_DPAD_RIGHT
+Sleeping for 111 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
 :Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
-    //[calendar_time:2021-07-06 15:33:39.475  system_uptime:102668907]
-    // Sending event #100
-:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
-:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
-:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
-:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
-:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
-:Sending Key (ACTION_DOWN): 20    // KEYCODE_DPAD_DOWN
-:Sending Key (ACTION_UP): 20    // KEYCODE_DPAD_DOWN
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Trackball (ACTION_DOWN): 0:(0.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
 Sleeping for 111 milliseconds
-:Sending Key (ACTION_DOWN): 21    // KEYCODE_DPAD_LEFT
-:Sending Key (ACTION_UP): 21    // KEYCODE_DPAD_LEFT
+:Sending Touch (ACTION_DOWN): 0:(164.0,476.0)
+:Sending Touch (ACTION_MOVE): 0:(161.87096,474.13425)
+:Sending Touch (ACTION_MOVE): 0:(160.85089,473.50986)
+:Sending Touch (ACTION_MOVE): 0:(159.36205,469.45074)
+:Sending Touch (ACTION_MOVE): 0:(158.42448,465.2473)
+:Sending Touch (ACTION_MOVE): 0:(156.03992,462.0611)
+:Sending Touch (ACTION_MOVE): 0:(154.43994,458.6514)
+:Sending Touch (ACTION_UP): 0:(152.93967,454.86172)
 Sleeping for 111 milliseconds
-:Sending Touch (ACTION_DOWN): 0:(712.0,378.0)
-:Sending Touch (ACTION_UP): 0:(716.41376,378.76254)
-Events injected: 111
-:Sending rotation degree=0, persist=false
-:Dropped: keys=0 pointers=0 trackballs=0 flips=1 rotations=0
-## Network stats: elapsed time=3635ms (0ms mobile, 0ms wifi, 3635ms not connected)
-// Monkey finished
