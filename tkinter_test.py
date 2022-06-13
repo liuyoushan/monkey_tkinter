@@ -4,11 +4,12 @@ import log_analysis
 import monkey
 import threading
 import datetime
-import time
+import time,os
 import tkinter  # 主窗口生成
 import tkinter.messagebox  # 弹出对话框
 from tkinter import *  # 运行按钮Button用到这个库
 from tkinter import ttk  # 下拉框控件要用ttk
+from tkinter import filedialog
 
 from os import path
 import sys
@@ -20,6 +21,12 @@ path_to_dat = path.join(bundle_dir, 'img.png')
 # from matplotlib.figure import Figure
 # from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
+'''
+tkinter_test类（页面控件显示相关的类，主运行层）
+monkey主要是运行具体monkey命令，需要传入用户输入的运行命令参数
+log_analysis主要是日志分析相关
+打包方法：pyinstaller ***.py --add-data ".\*.png;."
+'''
 
 # 运行参数
 run_test = ('--pct-touch', '--pct-motion', '--pct-trackball', '--pct-nav',
@@ -29,10 +36,13 @@ rg = [str(i) + '%' for i in range(1, 101)]
 crash_is = ['开启', '关闭']
 
 
+
 class MainPage:
     def __init__(self):
         self.root = tkinter.Tk()
         self.root.config(background='Gainsboro')
+
+
 
     def mainpage(self):
         root = self.root
@@ -65,6 +75,7 @@ class MainPage:
         # 给输入框默认值
         addr = tkinter.StringVar()
         addr.set('点击获取→')
+        # 包名输入框控件
         self.page = Entry(root, bd=5, bg='white', textvariable=addr)
         self.page.place(x=90, y=10)
         Label(root, text='CLICK总数：').place(x=10, y=40)
@@ -76,36 +87,36 @@ class MainPage:
 
         Label(root, text='运行参数1：').place(x=10, y=130)
         # 运行参数下拉框，设置默认值为第一个字符串
-        self.run_p1 = ttk.Combobox(root, value=run_test)
+        self.run_p1 = ttk.Combobox(root, value=run_test, state='readonly')
         self.run_p1.place(x=90, y=130)
         self.run_p1.current(0)
         # 运行参数百分比
-        self.run_bfb1 = ttk.Combobox(root, value=rg)
+        self.run_bfb1 = ttk.Combobox(root, value=rg, state='readonly')
         self.run_bfb1.place(x=90, y=155)
         self.run_bfb1.current(9)
 
         Label(root, text='运行参数2：').place(x=10, y=190)
         # 下拉框，设置默认值为第一个字符串
-        self.run_p2 = ttk.Combobox(root, value=run_test)
+        self.run_p2 = ttk.Combobox(root, value=run_test, state='readonly')
         self.run_p2.place(x=90, y=190)
         self.run_p2.current(0)
-        self.run_bfb2 = ttk.Combobox(root, value=rg)
+        self.run_bfb2 = ttk.Combobox(root, value=rg, state='readonly')
         self.run_bfb2.place(x=90, y=215)
         self.run_bfb2.current(9)
 
         Label(root, text='运行参数3：').place(x=10, y=250)
         # 下拉框，设置默认值为第一个字符串
-        self.run_p3 = ttk.Combobox(root, value=run_test)
+        self.run_p3 = ttk.Combobox(root, value=run_test, state='readonly')
         self.run_p3.place(x=90, y=250)
         self.run_p3.current(0)
-        self.run_bfb3 = ttk.Combobox(root, value=rg)
+        self.run_bfb3 = ttk.Combobox(root, value=rg, state='readonly')
         self.run_bfb3.place(x=90, y=275)
         self.run_bfb3.current(9)
 
         # 是否忽略崩溃
         Label(root, text='忽略崩溃：').place(x=10, y=310)
         # 下拉框，设置默认值为第一个字符串
-        self.crash_is = ttk.Combobox(root, value=crash_is)
+        self.crash_is = ttk.Combobox(root, value=crash_is, state='readonly')
         self.crash_is.place(x=90, y=310)
         self.crash_is.current(0)
 
@@ -118,46 +129,67 @@ class MainPage:
                font=('Helvetica', '10')).place(x=10, y=380)
         Button(root, text='结束运行', takefocus=0, command=self.end_run, bg='red', width=8, height=0,
                font=('Helvetica', '10')).place(x=90, y=380)
-        Button(root, text='异常日志', takefocus=0, command=self.inster_data, bg='Gainsboro', width=8, height=0,
-               font=('Helvetica', '10')).place(x=310, y=10)
-        Button(root, text='清空', takefocus=0, command=self.clear_data, bg='Gainsboro', width=8, height=0,
-               font=('Helvetica', '10')).place(x=385, y=10)
+        Button(root, text='分析文件日志', takefocus=0, command=self.inster_data, bg='Gainsboro', width=10, height=0,
+               font=('Helvetica', '10')).place(x=680, y=10)
+        Button(root, text='清空表格', takefocus=0, command=self.clear_data, bg='Gainsboro', width=8, height=0,
+               font=('Helvetica', '10')).place(x=720, y=280)
 
         # 自动获取包名
         def btnClick():
             s = monkey.get_page()
-            print(s)
+            print(s,'未获取到设备')
             if s:
                 # 复制到剪切板
                 pyperclip.copy(s)
                 tkinter.messagebox.showinfo("提示", '已复制到剪切板！\n包名：{}'.format(s))
             else:
-                tkinter.messagebox.showinfo("提示", '复制失败！\n未获取到包名，请注意设备连接是否正常，包是否正常安装')
+                tkinter.messagebox.showinfo("提示", '复制失败！\n未获取到包名，请检查设备连接是否正常')
 
         Button(root, text='获取', takefocus=0, command=btnClick, width=3, height=0, bg='Gainsboro',
                font=('Helvetica', '10')).place(x=245, y=10)
 
+        def file_path():
+            # lists = monkey.get_file_txt()
+            Label(root, text='选择文件：').place(x=310, y=10)
+            # 下拉框，设置默认值为第一个字符串
+            self.file_list = ttk.Combobox(root, value=monkey.get_file_txt(), width=27, state='readonly')
+            self.file_list.place(x=385, y=10)
+            self.file_list.current(0)
+
+        file_path()
+        Button(root, text='更新文件', takefocus=0, command=file_path, bg='Gainsboro', width=6, height=0,
+               font=('Helvetica', '10')).place(x=610, y=10)
         # 创建表格控件
-        self.tree_date = ttk.Treeview(self.root)
+        self.tree_date = ttk.Treeview(root, show='headings')
         tree_date = self.tree_date
 
+        # 竖直滚动条
+        ybar = ttk.Scrollbar(root, orient='vertical')
+        ybar.place()
+        ybar.config(command=self.tree_date.yview)
+        tree_date.configure(yscrollcommand=ybar.set)
+
         # 创建表格显示日志异常信息
-        def biaoge():
+        def table():
             # 创建表格
-            tree_date['columns'] = ['类型', '行数', '错误日志']
+            tree_date['columns'] = ['类型', '行数', '包名', '异常关键字']
             tree_date.place(x=310, y=40)
+
             # 设置列宽度
-            tree_date.column('错误日志', width=300)
-            tree_date.column('行数', width=50)
-            tree_date.column('类型', width=50)
+            tree_date.column('异常关键字', width=300)
+            tree_date.column('包名', width=100)
+            tree_date.column('行数', width=50, anchor=S)
+            tree_date.column('类型', width=50, anchor=S)
+
             # 添加列名
-            tree_date.heading('错误日志', text='错误日志')
-            tree_date.heading('行数', text='行数')
             tree_date.heading('类型', text='类型')
-            tree_date.insert('', 1, text='运行完成后可点击查看异常日志', values=())
+            tree_date.heading('异常关键字', text='异常关键字')
+            tree_date.heading('包名', text='包名')
+            tree_date.heading('行数', text='行数')
 
-        biaoge()
+            tree_date.insert('', 1, text='', values=('', '', '', '运行完成后可点击查看异常日志'))
 
+        table()
         # 父窗口进入事件循环，可以理解为保持窗口运行，否则界面不展示
         root.mainloop()
 
@@ -193,7 +225,7 @@ class MainPage:
                 tkinter.messagebox.showinfo("提示", '{}不能为空'.format(k))
                 break
                 # raise NameError('{}不能为空'.format(k))
-        monkey.runmonkey(dicts)
+        monkey.runmonkey(dicts, monkey.log_path())
 
     # 运行计时
     def runtime(self):
@@ -213,14 +245,15 @@ class MainPage:
             break
 
     def inster_data(self):
-        logs = log_analysis.read_file().get_file()
+        self.clear_data()
+        logs = log_analysis.read_file(self.file_list.get()).get_file()
         if logs:
             for i in range(len(logs)):
                 # 给表格中添加数据
-                self.tree_date.insert('', 1, text=logs[i][3], values=(logs[i][0], logs[i][1], logs[i][2]))
+                self.tree_date.insert('', END, text='', values=(logs[i][0], logs[i][1], logs[i][2], logs[i][3]))
         else:
-            print('没有收集到异常日志')
-            self.tree_date.insert('', 1, text='未收集到异常日志', values=())
+            print('未收集到异常日志')
+            self.tree_date.insert('', 1, text='未收集到异常日志', values=('', '', '', '未收集到异常日志'))
 
     def clear_data(self):
         x = self.tree_date.get_children()

@@ -1,11 +1,49 @@
 # -*- coding: utf-8 -*-
-import time, os, re, sys
+import time, os, re, sys, datetime
 
 rune_state = False
-# 日志写入路径
+
 PATH = os.path.dirname(os.path.realpath(sys.argv[0]))
-PATH_info = os.path.join(PATH, 'info.txt')
-PATH_error = os.path.join(PATH, 'error.txt')
+
+
+def log_path():
+    '''
+    每次运行请求此方法时，文件名：获取当前时间+文件名
+    :return:
+    '''
+    now = datetime.datetime.now().strftime("%Y-%m-%d~%H'%M'%S")
+    # 日志写入路径
+    PATH_info = os.path.join(PATH, str(now) + '_INFO.txt')
+    PATH_error = os.path.join(PATH, str(now) + '_ERROR.txt')
+    return PATH_info, PATH_error, PATH
+
+
+# 获取最新的error文件
+def newest():
+    files = os.listdir(PATH)
+    # paths = [os.path.join(path, basename) for basename in files]
+    paths = [os.path.join(PATH, basename) for basename in files if 'ERROR' in basename]
+    return max(paths, key=os.path.getctime)
+
+
+# 获取目录下所有txt文件
+def get_file_txt():
+    # path = sys.argv[0]  # 获取本文件路径
+    # filename = os.path.basename(path)  # 获取本文件名
+    # path = os.path.dirname(os.path.realpath(sys.argv[0]))  # 获取本文件所在目录
+    # filelist = os.listdir(path)  # 获取文件名列表
+    # filelist.remove(filename)  # 从目录的文件里面去除本文件的文件名
+    try:
+        filelist = os.listdir(PATH)
+        a = []
+        for i in filelist:
+            if '.txt' in i:
+                a.append(i)
+        if not a:
+            a.append('无txt文件')
+        return a
+    except NameError as e:
+        print(e)
 
 
 # 查找手机设备
@@ -19,7 +57,13 @@ def devices():
         return False
 
 
-def runmonkey(parameter):
+def runmonkey(parameter, get_nowTime):
+    '''
+
+    :param parameter: 需要运行的命令参数
+    :return:
+    '''
+
     global rune_state
     if devices():
         device = devices()[0]
@@ -36,17 +80,18 @@ def runmonkey(parameter):
         .format(device=device, page=parameter['page'], ms=parameter['ms'],
                 click=parameter['click'], p1=parameter['run_p1'], p2=parameter['run_p2'],
                 p3=parameter['run_p3'], pp1=parameter['run_bfb1'], pp2=parameter['run_bfb2'],
-                pp3=parameter['run_bfb3'], PATH_info=PATH_info, PATH_error=PATH_error, crash=crash_if)
+                pp3=parameter['run_bfb3'], PATH_info=get_nowTime[0], PATH_error=get_nowTime[1], crash=crash_if)
     print('info：运行命令:{}\n'.format(monkeycmd))
 
     # 查找安装包
     cad = 'adb -s {device} shell pm list package "|grep {page}"'.format(device=device, page=parameter['page'])
     pagename = os.popen(cad).read()
-
+    # 判断是否安装了用户输入的包名，没有则提示用户安装
     if pagename:
         rune_state = True
         os.popen(monkeycmd)
         print('info：start running monkey')
+
         time.sleep(2)
         while True:
             time.sleep(1)
@@ -90,11 +135,17 @@ def end_monkey():
 # 获取运行中的包名类名
 def get_page():
     device = devices()
+    print(device,type(device))
     if device:
         page_name = 'adb -s {device} shell dumpsys window w | findstr \/ | findstr name='.format(device=device[0])
         w = os.popen(page_name).read()
-        ws = re.findall('mSurface=Surface\(name=(.*?)/com', w)
+        print(w)
+        ws = re.findall('mSurface=Surface\(name=(.*?)/(.*?)\)', w)
+        print(ws)
         if ws:
-            return ws[0]
+            return ws[0][0]
         else:
-            raise NameError('未获取到包名')
+            return False
+    else:
+        return False
+
