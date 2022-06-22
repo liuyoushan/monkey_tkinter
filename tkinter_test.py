@@ -4,7 +4,7 @@ import log_analysis
 import monkey
 import threading
 import datetime
-import time,os
+import time, os
 import tkinter  # 主窗口生成
 import tkinter.messagebox  # 弹出对话框
 from tkinter import *  # 运行按钮Button用到这个库
@@ -36,12 +36,11 @@ rg = [str(i) + '%' for i in range(1, 101)]
 crash_is = ['开启', '关闭']
 
 
-
 class MainPage:
     def __init__(self):
         self.root = tkinter.Tk()
         self.root.config(background='Gainsboro')
-
+        self.not_empty = False
 
 
     def mainpage(self):
@@ -71,64 +70,78 @@ class MainPage:
         img()
 
         # ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇按钮控件⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
-        Label(root, text='包名：').place(x=10, y=10)
+        Label(root, text='包名:').place(x=10, y=10)
         # 给输入框默认值
         addr = tkinter.StringVar()
         addr.set('点击获取→')
         # 包名输入框控件
         self.page = Entry(root, bd=5, bg='white', textvariable=addr)
         self.page.place(x=90, y=10)
-        Label(root, text='CLICK总数：').place(x=10, y=40)
+        Label(root, text='Click总数:').place(x=10, y=45)
         self.click = Entry(root, bd=5, bg='white')
-        self.click.place(x=90, y=40)
-        Label(root, text='间隔时间MS：').place(x=10, y=70)
+        self.click.place(x=90, y=45)
+        Label(root, text='间隔时间ms:').place(x=10, y=80)
         self.ms = Entry(root, bd=5, bg='white')
-        self.ms.place(x=90, y=70)
-
-        Label(root, text='运行参数1：').place(x=10, y=130)
-        # 运行参数下拉框，设置默认值为第一个字符串
-        self.run_p1 = ttk.Combobox(root, value=run_test, state='readonly')
-        self.run_p1.place(x=90, y=130)
-        self.run_p1.current(0)
-        # 运行参数百分比
-        self.run_bfb1 = ttk.Combobox(root, value=rg, state='readonly')
-        self.run_bfb1.place(x=90, y=155)
-        self.run_bfb1.current(9)
-
-        Label(root, text='运行参数2：').place(x=10, y=190)
-        # 下拉框，设置默认值为第一个字符串
-        self.run_p2 = ttk.Combobox(root, value=run_test, state='readonly')
-        self.run_p2.place(x=90, y=190)
-        self.run_p2.current(0)
-        self.run_bfb2 = ttk.Combobox(root, value=rg, state='readonly')
-        self.run_bfb2.place(x=90, y=215)
-        self.run_bfb2.current(9)
-
-        Label(root, text='运行参数3：').place(x=10, y=250)
-        # 下拉框，设置默认值为第一个字符串
-        self.run_p3 = ttk.Combobox(root, value=run_test, state='readonly')
-        self.run_p3.place(x=90, y=250)
-        self.run_p3.current(0)
-        self.run_bfb3 = ttk.Combobox(root, value=rg, state='readonly')
-        self.run_bfb3.place(x=90, y=275)
-        self.run_bfb3.current(9)
-
+        self.ms.place(x=90, y=80)
         # 是否忽略崩溃
-        Label(root, text='忽略崩溃：').place(x=10, y=310)
+        Label(root, text='忽略崩溃:').place(x=10, y=115)
         # 下拉框，设置默认值为第一个字符串
         self.crash_is = ttk.Combobox(root, value=crash_is, state='readonly')
-        self.crash_is.place(x=90, y=310)
+        self.crash_is.place(x=90, y=115)
         self.crash_is.current(0)
 
-        Label(self.root, text='开始时间：').place(x=10, y=450)
-        Label(self.root, text='结束时间：').place(x=10, y=470)
-        Label(self.root, text='运行计时(s)：').place(x=10, y=490)
+        '''
+        需求:实现点击添加按钮新增运行参数控件
+        修改:想重构.把运行参数控件的,所有下拉控件添加到一个列表,实现上述需求
+        '''
+        self.num = 1  # 参数名称自增
+        self.optionmenu_y = 105  # 起始位置
+        self.run_optionmenu_list = []
+        self.percentage_optionmenu_list = []
+        self.label_title = []
+
+        def add_OptionMenu():
+            self.optionmenv_num = 'opName'
+            if self.num <= 6:
+                opt_1 = Label(root, text='运行参数{}：'.format(self.num)).place(x=10, y=self.optionmenu_y + 60)
+                self.label_title.append(opt_1)
+                # 运行参数下拉框
+                opt_2 = ttk.Combobox(root, value=run_test, state='readonly')
+                opt_2.current(0)
+                # 运行参数百分比
+                opt_3 = ttk.Combobox(root, value=rg, state='readonly')
+                opt_3.current(9)
+                self.run_optionmenu_list.append(opt_2)
+                self.percentage_optionmenu_list.append(opt_3)
+                opt_2.place(x=90, y=self.optionmenu_y + 60)
+                opt_3.place(x=90, y=self.optionmenu_y + 85)
+            else:
+                print('最多添加6个')
+            # 控件名称数字&y轴位置
+            self.num += 1
+            self.optionmenu_y += 60
+
+        add_OptionMenu()
+        Button(root, text='+', takefocus=0, command=add_OptionMenu, bg='Gainsboro', width=2, height=0,
+               font=('Helvetica', '10')).place(x=255, y=165)
+
+        # def delete_optionmenu():
+        #     self.run_optionmenu_list[0].destroy()
+        #     self.percentage_optionmenu_list[0].destroy()
+        #     print(self.label_title[0])
+        #     self.label_title[0].destroy()
+        # Button(root, text='-', takefocus=0, command=delete_optionmenu, bg='Gainsboro', width=2, height=0,
+        #        font=('Helvetica', '10')).place(x=270, y=165)
+
+        Label(self.root, text='开始时间:').place(x=850, y=500)
+        Label(self.root, text='结束时间:').place(x=850, y=520)
+        Label(self.root, text='计时(s):').place(x=850, y=540)
 
         # 可点击按钮控件，需要用到包from tkinter import *
         Button(root, text='运行', takefocus=0, command=self.run_thread, bg='green', width=8, height=0,
-               font=('Helvetica', '10')).place(x=10, y=380)
+               font=('Helvetica', '10')).place(x=10, y=550)
         Button(root, text='结束运行', takefocus=0, command=self.end_run, bg='red', width=8, height=0,
-               font=('Helvetica', '10')).place(x=90, y=380)
+               font=('Helvetica', '10')).place(x=90, y=550)
         Button(root, text='分析文件日志', takefocus=0, command=self.inster_data, bg='Gainsboro', width=10, height=0,
                font=('Helvetica', '10')).place(x=680, y=10)
         Button(root, text='清空表格', takefocus=0, command=self.clear_data, bg='Gainsboro', width=8, height=0,
@@ -137,7 +150,6 @@ class MainPage:
         # 自动获取包名
         def btnClick():
             s = monkey.get_page()
-            print(s,'未获取到设备')
             if s:
                 # 复制到剪切板
                 pyperclip.copy(s)
@@ -210,26 +222,33 @@ class MainPage:
 
     def init_str(self):
         dicts = {}
+        # 调用方法，run_data_list的所有参数数据处理，匹配并且添加到列表
+        run_data_list = []
+        for r, p in zip(self.run_optionmenu_list, self.percentage_optionmenu_list):
+            run_data_list.append([r.get(), re.sub('\D', '', p.get())])
         dicts['page'] = self.page.get()
         dicts['click'] = self.click.get()
         dicts['ms'] = self.ms.get()
-        dicts['run_p1'] = self.run_p1.get()
-        dicts['run_p2'] = self.run_p2.get()
-        dicts['run_p3'] = self.run_p3.get()
-        dicts['run_bfb1'] = re.sub('\D', '', self.run_bfb1.get())
-        dicts['run_bfb2'] = re.sub('\D', '', self.run_bfb2.get())
-        dicts['run_bfb3'] = re.sub('\D', '', self.run_bfb3.get())
         dicts['crash_is'] = self.crash_is.get()
+        dicts['run_data_list'] = run_data_list
+        # self.not_empty = False
         for k, v in dicts.items():
-            if v.strip() == '':
-                tkinter.messagebox.showinfo("提示", '{}不能为空'.format(k))
-                break
-                # raise NameError('{}不能为空'.format(k))
-        monkey.runmonkey(dicts, monkey.log_path())
+            if k not in ['run_data_list', 'crash_is']:  # 判断字典key，如果是列表不包含的字符继续执行（因为数据不一样，包含字符串和列表。下面的判断会出问题）
+                if v.strip() == '':  # 如果为空，那么修改指标变量为False.并且弹出提示不能为空。并且退出所有循环。
+                    tkinter.messagebox.showinfo("提示", '{}不能为空'.format(k))
+                    self.not_empty = False
+                    break
+            else:
+                continue
+            # 如果能顺利循环完成，那改为True
+            self.not_empty = True
+
+        if self.not_empty:
+            monkey.runmonkey(dicts, monkey.log_path())
 
     # 运行计时
     def runtime(self):
-        Label(self.root, text=datetime.datetime.now().strftime('%H:%M:%S')).place(x=90, y=450)
+        Label(self.root, text=datetime.datetime.now().strftime('%H:%M:%S')).place(x=920, y=500)
         while True:
             starttime = time.time()
             print('----------------------------------------------------------')
@@ -237,10 +256,10 @@ class MainPage:
             while True:
                 times = round(time.time() - starttime, 0)
                 time.sleep(1)
-                Label(self.root, text=times).place(x=90, y=490)
+                Label(self.root, text=times).place(x=920, y=540)
                 if monkey.rune_state is False:
                     print('退出计时')
-                    Label(self.root, text=datetime.datetime.now().strftime('%H:%M:%S')).place(x=90, y=470)
+                    Label(self.root, text=datetime.datetime.now().strftime('%H:%M:%S')).place(x=920, y=520)
                     break
             break
 

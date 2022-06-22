@@ -73,14 +73,17 @@ def runmonkey(parameter, get_nowTime):
     # 判断'--ignore-crashes'是否开启
     crash_if = '--ignore-crashes' if parameter['crash_is'] == '开启' else ''
 
+    # 处理下运行参数的数据，把所有数据拼接一起。类似：--pct-touch 10--pct-touch 14--pct-touch 17
+    run_data = ''
+    for i in parameter['run_data_list']:
+        run_data += i[0] + ' ' + i[1] + ' '
+
     monkeycmd = "adb -s {device} shell monkey -p {page} " \
-                "--ignore-timeouts {crash} --kill-process-after-error " \
-                "{p1} {pp1} {p2} {pp2} {p3} {pp3}  " \
+                "--ignore-timeouts {crash} --kill-process-after-error {p1} " \
                 "--throttle {ms} -v -v -v {click} 2>{PATH_error} 1>{PATH_info}" \
         .format(device=device, page=parameter['page'], ms=parameter['ms'],
-                click=parameter['click'], p1=parameter['run_p1'], p2=parameter['run_p2'],
-                p3=parameter['run_p3'], pp1=parameter['run_bfb1'], pp2=parameter['run_bfb2'],
-                pp3=parameter['run_bfb3'], PATH_info=get_nowTime[0], PATH_error=get_nowTime[1], crash=crash_if)
+                click=parameter['click'], p1=run_data, PATH_info=get_nowTime[0], PATH_error=get_nowTime[1],
+                crash=crash_if)
     print('info：运行命令:{}\n'.format(monkeycmd))
 
     # 查找安装包
@@ -135,17 +138,16 @@ def end_monkey():
 # 获取运行中的包名类名
 def get_page():
     device = devices()
-    print(device,type(device))
+    print(device, type(device))
     if device:
         page_name = 'adb -s {device} shell dumpsys window w | findstr \/ | findstr name='.format(device=device[0])
         w = os.popen(page_name).read()
-        print(w)
+        print('控制台返回：\n',w)
         ws = re.findall('mSurface=Surface\(name=(.*?)/(.*?)\)', w)
-        print(ws)
+        print('正则匹配结果：\n',ws)
         if ws:
             return ws[0][0]
         else:
             return False
     else:
         return False
-
