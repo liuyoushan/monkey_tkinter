@@ -94,44 +94,60 @@ class MainPage:
         需求:实现点击添加按钮新增运行参数控件
         修改:想重构.把运行参数控件的,所有下拉控件添加到一个列表,实现上述需求
         '''
-        self.num = 1  # 参数名称自增
-        self.optionmenu_y = 105  # 起始位置
+        self.num = 0  # 参数名称自增
+        self.optionmenu_y = 45  # 起始位置
         self.run_optionmenu_list = []
         self.percentage_optionmenu_list = []
         self.label_title = []
 
         def add_OptionMenu():
             self.optionmenv_num = 'opName'
-            if self.num <= 6:
-                opt_1 = Label(root, text='运行参数{}：'.format(self.num)).place(x=10, y=self.optionmenu_y + 60)
-                self.label_title.append(opt_1)
+            if self.num < 6:
+                # 控件名称数字&y轴位置
+                self.num += 1
+                self.optionmenu_y += 60
+
+                # 运行参数label
+                opt_1 = Label(root, text='运行参数{}：'.format(self.num))
                 # 运行参数下拉框
                 opt_2 = ttk.Combobox(root, value=run_test, state='readonly')
                 opt_2.current(0)
                 # 运行参数百分比
                 opt_3 = ttk.Combobox(root, value=rg, state='readonly')
                 opt_3.current(9)
+
+                # 控件添加到数组
+                self.label_title.append(opt_1)
                 self.run_optionmenu_list.append(opt_2)
                 self.percentage_optionmenu_list.append(opt_3)
+                # 显示到页面
+                opt_1.place(x=10, y=self.optionmenu_y + 60)
                 opt_2.place(x=90, y=self.optionmenu_y + 60)
                 opt_3.place(x=90, y=self.optionmenu_y + 85)
             else:
                 print('最多添加6个')
-            # 控件名称数字&y轴位置
-            self.num += 1
-            self.optionmenu_y += 60
-
         add_OptionMenu()
         Button(root, text='+', takefocus=0, command=add_OptionMenu, bg='Gainsboro', width=2, height=0,
                font=('Helvetica', '10')).place(x=255, y=165)
 
-        # def delete_optionmenu():
-        #     self.run_optionmenu_list[0].destroy()
-        #     self.percentage_optionmenu_list[0].destroy()
-        #     print(self.label_title[0])
-        #     self.label_title[0].destroy()
-        # Button(root, text='-', takefocus=0, command=delete_optionmenu, bg='Gainsboro', width=2, height=0,
-        #        font=('Helvetica', '10')).place(x=270, y=165)
+        # 删除运行参数下拉控件
+        def delete_optionmenu():
+            if len(self.label_title) > 1:
+                # 控件名称数字&y轴位置
+                self.num -= 1
+                self.optionmenu_y -= 60
+                # 删除控件
+                self.run_optionmenu_list[-1].destroy()
+                self.percentage_optionmenu_list[-1].destroy()
+                self.label_title[-1].destroy()
+                # 清除列表最后一个控件
+                del self.run_optionmenu_list[-1]
+                del self.percentage_optionmenu_list[-1]
+                del self.label_title[-1]
+            else:
+                print('最后一个不能删除')
+        Button(root, text='-', takefocus=0, command=delete_optionmenu, bg='Gainsboro', width=2, height=0,
+               font=('Helvetica', '10')).place(x=280, y=165)
 
         Label(self.root, text='开始时间:').place(x=850, y=500)
         Label(self.root, text='结束时间:').place(x=850, y=520)
