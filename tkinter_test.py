@@ -84,10 +84,10 @@ class MainPage:
         self.ms = Entry(root, bd=5, bg='white')
         self.ms.place(x=90, y=80)
         # 是否忽略崩溃
-        Label(root, text='忽略崩溃:').place(x=10, y=115)
+        Label(root, text='忽略崩溃:').place(x=10, y=125)
         # 下拉框，设置默认值为第一个字符串
         self.crash_is = ttk.Combobox(root, value=crash_is, state='readonly')
-        self.crash_is.place(x=90, y=115)
+        self.crash_is.place(x=90, y=125)
         self.crash_is.current(0)
 
         '''
@@ -126,7 +126,8 @@ class MainPage:
                 opt_3.place(x=90, y=self.optionmenu_y + 85)
             else:
                 print('最多添加6个')
-        add_OptionMenu()
+
+        add_OptionMenu()    # 默认显示一个
         Button(root, text='+', takefocus=0, command=add_OptionMenu, bg='Gainsboro', width=2, height=0,
                font=('Helvetica', '10')).place(x=255, y=165)
 

@@ -135,14 +135,14 @@ def end_monkey():
         return False
 
 
-# 获取运行中的包名类名
+# 自动获取：获取运行中的包名类名
 def get_page():
     device = devices()
-    print(device, type(device))
+    print('devices：', device)
     if device:
         page_name = 'adb -s {device} shell dumpsys window w | findstr \/ | findstr name='.format(device=device[0])
         w = os.popen(page_name).read()
-        print('控制台返回：\n',w)
+        print('控制台返回包名类名：\n',w)
         ws = re.findall('mSurface=Surface\(name=(.*?)/(.*?)\)', w)
         print('正则匹配结果：\n',ws)
         if ws:
