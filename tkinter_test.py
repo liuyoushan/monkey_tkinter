@@ -78,8 +78,10 @@ class MainPage:
         self.page = Entry(root, bd=5, bg='white', textvariable=addr)
         self.page.place(x=90, y=10)
         Label(root, text='Click总数:').place(x=10, y=45)
+        # click输入框
         self.click = Entry(root, bd=5, bg='white')
         self.click.place(x=90, y=45)
+
         Label(root, text='间隔时间ms:').place(x=10, y=80)
         self.ms = Entry(root, bd=5, bg='white')
         self.ms.place(x=90, y=80)
