@@ -1,0 +1,135 @@
+  bash arg: -p
+  bash arg: com.zego.liveroomplayground
+  bash arg: --ignore-timeouts
+  bash arg: --ignore-crashes
+  bash arg: --kill-process-after-error
+  bash arg: --pct-touch
+  bash arg: 10
+  bash arg: --pct-touch
+  bash arg: 10
+  bash arg: --pct-touch
+  bash arg: 10
+  bash arg: --throttle
+  bash arg: 11
+  bash arg: -v
+  bash arg: -v
+  bash arg: -v
+  bash arg: 11
+:Monkey: seed=1654872506179 count=11
+:AllowPackage: com.zego.liveroomplayground
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Selecting main activities from category android.intent.category.LAUNCHER
+//   - NOT USING main activity com.android.browser.launch.SplashActivity (from package com.android.browser)
+//   - NOT USING main activity com.android.calendar.homepage.AllInOneActivity (from package com.android.calendar)
+//   - NOT USING main activity com.android.camera.Camera (from package com.android.camera)
+//   - NOT USING main activity com.android.contacts.activities.PeopleActivity (from package com.android.contacts)
+//   - NOT USING main activity com.android.contacts.activities.TwelveKeyDialer (from package com.android.contacts)
+//   - NOT USING main activity com.android.deskclock.DeskClockTabActivity (from package com.android.deskclock)
+//   - NOT USING main activity com.android.fileexplorer.FileExplorerTabActivity (from package com.android.fileexplorer)
+//   - NOT USING main activity com.android.mms.ui.MmsTabActivity (from package com.android.mms)
+//   - NOT USING main activity com.android.settings.MainSettings (from package com.android.settings)
+//   - NOT USING main activity com.android.soundrecorder.SoundRecorder (from package com.android.soundrecorder)
+//   - NOT USING main activity com.android.thememanager.ThemeResourceTabActivity (from package com.android.thememanager)
+//   - NOT USING main activity com.xiaomi.jr.app.MiFinanceActivity (from package com.mipay.wallet)
+//   - NOT USING main activity com.miui.gallery.activity.HomePageActivity (from package com.miui.gallery)
+//   - NOT USING main activity com.miui.miservice.main.MainActivity (from package com.miui.miservice)
+//   - NOT USING main activity com.xiaomi.market.ui.MarketTabActivity (from package com.xiaomi.market)
+//   - NOT USING main activity com.google.android.apps.chrome.Main (from package com.android.chrome)
+//   - NOT USING main activity com.android.email.activity.Welcome (from package com.android.email)
+//   - NOT USING main activity com.iflytek.inputmethod.LauncherActivity (from package com.iflytek.inputmethod)
+//   - NOT USING main activity com.miui.calculator.cal.CalculatorActivity (from package com.miui.calculator)
+//   - NOT USING main activity com.miui.notes.ui.NotesListActivity (from package com.miui.notes)
+//   - NOT USING main activity com.miui.weather2.ActivityWeatherMain (from package com.miui.weather2)
+//   - NOT USING main activity com.xiaomi.jr.app.MiFinanceActivity (from package com.xiaomi.jr)
+//   - NOT USING main activity com.xiaomi.scanner.app.ScanActivity (from package com.xiaomi.scanner)
+//   - NOT USING main activity com.android.providers.downloads.ui.DownloadList (from package com.android.providers.downloads.ui)
+//   - NOT USING main activity fm.qingting.qtradio.WelcomeActivity (from package com.miui.fm)
+//   - NOT USING main activity com.miui.player.ui.MusicBrowserActivity (from package com.miui.player)
+//   - NOT USING main activity com.miui.securityscan.MainActivity (from package com.miui.securitycenter)
+//   - NOT USING main activity com.miui.video.Launcher1 (from package com.miui.video)
+//   - NOT USING main activity com.xiaomi.voiceassistant.LauncherRouterActivity (from package com.miui.voiceassist)
+//   - NOT USING main activity cn.lezhi.speedtest.welcome.WelcomeActivity (from package cn.lezhi.speedtest)
+//   - NOT USING main activity cn.wps.moffice.documentmanager.PreStartActivity (from package cn.wps.moffice_eng)
+//   - NOT USING main activity com.UCMobile.main.UCMobile (from package com.UCMobile)
+//   - NOT USING main activity com.autonavi.map.activity.SplashActivity (from package com.autonavi.minimap)
+//   - NOT USING main activity com.xiaomi.mitv.phone.remotecontroller.HoriWidgetMainActivityV2 (from package com.duokan.phone.remotecontroller)
+//   - NOT USING main activity com.duokan.reader.DkReaderActivity (from package com.duokan.reader)
+//   - NOT USING main activity com.hpplay.happycast.activitys.SplashActivity (from package com.hpplay.happycast)
+//   - NOT USING main activity com.kugou.android.app.splash.SplashActivity (from package com.kugou.android)
+//   - NOT USING main activity com.miui.compass.CompassActivity (from package com.miui.compass)
+//   - NOT USING main activity com.miui.huanji.MainActivity (from package com.miui.huanji)
+//   - NOT USING main activity com.miui.screenrecorder.activity.ScreenRecorderHomeActivity (from package com.miui.screenrecorder)
+//   - NOT USING main activity com.miui.virtualsim.ui.MainActivity (from package com.miui.virtualsim)
+//   - NOT USING main activity com.opera.android.OperaStartActivity (from package com.oupeng.mini.android)
+//   - NOT USING main activity com.tencent.mm.ui.LauncherUI (from package com.tencent.mm)
+//   - NOT USING main activity com.tencent.mobileqq.activity.SplashActivity (from package com.tencent.mobileqq)
+//   - NOT USING main activity com.tencent.mtt.SplashActivity (from package com.tencent.mtt)
+//   - NOT USING main activity com.tencent.wework.launch.LaunchSplashActivity (from package com.tencent.wework)
+//   - NOT USING main activity com.hpplay.sdk.source.test.MainActivity (from package com.xes.jazhanghui.activity)
+//   - NOT USING main activity com.xiaomi.gamecenter.ui.MainTabActivity (from package com.xiaomi.gamecenter)
+//   - NOT USING main activity com.xiaomi.shop.activity.MainTabActivity (from package com.xiaomi.shop)
+//   - NOT USING main activity com.xiaomi.smarthome.SmartHomeMainActivity (from package com.xiaomi.smarthome)
+//   - NOT USING main activity com.ximalaya.ting.android.host.activity.MainActivity (from package com.ximalaya.ting.android)
+//   + Using main activity com.zego.liveroomplayground.demo.ui.MainActivity (from package com.zego.liveroomplayground)
+//   - NOT USING main activity com.zego.smoketest.business.ui.MainActivity (from package com.zego.smoketest)
+//   - NOT USING main activity com.zego.videoconference.business.activity.splash.SplashActivity (from package com.zego.talklineoverseas)
+//   - NOT USING main activity im.zego.gologin.GoLoginActivity (from package im.zego.GoEnjoy)
+//   - NOT USING main activity im.zego.copyrightedvideodemo.ui.MainActivity (from package im.zego.copyrightedvideodemo)
+//   - NOT USING main activity im.zego.expresssample.ui.MainActivity (from package im.zego.express.example.video)
+//   - NOT USING main activity im.zego.gometaverse.MetaMainActivity (from package im.zego.gometaverse)
+//   - NOT USING main activity im.zego.superboarddemo.ui.login.LoginActivity (from package im.zego.superboarddemo)
+//   - NOT USING main activity org.mozilla.firefox.App (from package org.mozilla.firefox)
+//   - NOT USING main activity org.kivy.android.PythonActivity (from package org.test.myapp)
+// Selecting main activities from category android.intent.category.MONKEY
+//   - NOT USING main activity com.android.quicksearchbox.SearchActivity (from package com.android.quicksearchbox)
+//   - NOT USING main activity com.android.settings.Settings$RunningServicesActivity (from package com.android.settings)
+//   - NOT USING main activity com.android.settings.Settings$StorageUseActivity (from package com.android.settings)
+//   - NOT USING main activity com.miui.cloudbackup.ui.CloudBackupDetailActivity (from package com.miui.cloudbackup)
+//   - NOT USING main activity com.miui.cloudservice.ui.MiCloudMainActivity (from package com.miui.cloudservice)
+//   - NOT USING main activity com.miui.home.launcher.Launcher (from package com.miui.home)
+//   - NOT USING main activity miui.notification.management.activity.NotificationAppListActivity (from package com.miui.notification)
+//   - NOT USING main activity com.xiaomi.account.ui.AccountSettingsActivity (from package com.xiaomi.account)
+//   - NOT USING main activity com.xiaomi.payment.MiliCenterEntryActivity (from package com.xiaomi.payment)
+//   - NOT USING main activity com.xiaomi.drivemode.UserGuideActivity (from package com.xiaomi.drivemode)
+//   - NOT USING main activity com.miui.micloudsync.MonkeyActivity (from package com.miui.micloudsync)
+//   - NOT USING main activity com.miui.personalassistant.setting.PASettingActivity (from package com.miui.personalassistant)
+//   - NOT USING main activity com.miui.virtualsim.monkeyentry.MonkeyActivity (from package com.miui.virtualsim)
+//   - NOT USING main activity com.xiaomi.drivemode.DriveModeSettingsActivity (from package com.xiaomi.drivemode)
+//   - NOT USING main activity com.xiaomi.drivemode.DriveModeAnimActivity (from package com.xiaomi.drivemode)
+//   - NOT USING main activity com.xiaomi.drivemode.MiuiLabDriveModeActivity (from package com.xiaomi.drivemode)
+// Seeded: 1654872506179
+// Event percentages:
+//   0: 10.0%
+//   1: 10.588236%
+//   2: 2.1176472%
+//   3: 15.882354%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 26.470589%
+//   7: 15.882354%
+//   8: 2.1176472%
+//   9: 2.1176472%
+//   10: 1.0588236%
+//   11: 13.764707%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.zego.liveroomplayground/.demo.ui.MainActivity;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zego.liveroomplayground/.demo.ui.MainActivity } in package com.zego.liveroomplayground
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zego.liveroomplayground/.demo.ui.MainActivity } in package com.zego.liveroomplayground
+Sleeping for 11 milliseconds
+:Sending Touch (ACTION_DOWN): 0:(231.0,274.0)
+:Sending Touch (ACTION_MOVE): 0:(235.12389,272.31598)
+:Sending Touch (ACTION_MOVE): 0:(235.46466,272.27335)
+:Sending Touch (ACTION_MOVE): 0:(236.60806,262.41486)
+:Sending Touch (ACTION_MOVE): 0:(239.00482,259.71954)
+:Sending Touch (ACTION_UP): 0:(243.60759,251.57706)
+Sleeping for 11 milliseconds
+:Sending Key (ACTION_DOWN): 19    // KEYCODE_DPAD_UP
+:Sending Key (ACTION_UP): 19    // KEYCODE_DPAD_UP
+Sleeping for 11 milliseconds
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,2.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-2.0)
+Events injected: 11
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=162ms (0ms mobile, 0ms wifi, 162ms not connected)
+// Monkey finished
