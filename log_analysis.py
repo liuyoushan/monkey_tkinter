@@ -1,18 +1,25 @@
 # -*- coding:utf-8 -*-
 import re
-import monkey
 
 '''
 log_analysis主要是日志分析相关
 '''
-ErrorKeywordList = ['CRASH', 'ANR']
+# 异常关键字配置
+ErrorKeywordList = ('CRASH', 'ANR', 'crash', 'anr')
 
 
-# 封装匹配异常关键字方法
-def re_keyword(s, i, keyword_1, keyword_2):
+# 封装异常关键字匹配的正则方法
+def re_keyword(data, line_number, keyword_1, keyword_2):
+    """
+    :param data: log数据
+    :param line_number: log行数
+    :param keyword_1:   异常关键字，用来匹配包名
+    :param keyword_2:   关键字，用来匹配异常数据的第二行。匹配表格列表的“异常关键字”
+    :return:    包名，异常关键字
+    """
     try:
-        log_keyword = re.findall('{}: (.*)'.format(keyword_2), s[i + 1])
-        page_name = re.findall('{}: (.*?) \('.format(keyword_1), s[i])
+        log_keyword = re.findall('{}: (.*)'.format(keyword_2), data[line_number + 1])
+        page_name = re.findall('{}: (.*?) \('.format(keyword_1), data[line_number])
     except:
         # 匹配失败则默认给个斜杠
         log_keyword = '\\'
@@ -27,7 +34,7 @@ def re_keyword(s, i, keyword_1, keyword_2):
     return page_name, log_keyword
 
 
-class read_file:
+class ReadFile:
     def __init__(self, path):
         self.path = path
 
@@ -42,25 +49,26 @@ class read_file:
                 str1.append(logs)
             return str1
 
+    # 判断是否存在指定关键字
     def get_file(self):
-        s = self.file()
+        # 按行读取的数据
+        file_data = self.file()
         str1 = []
-        for i in range(29, len(s)):
-            if 'CRASH' in s[i] or 'crash' in s[i]:
-                # print('出现CRASH:{}'.format(s[i]))
-                re_keyword_ = re_keyword(s, i, 'CRASH', 'Msg')
-                res = 'CRASH', i + 1, re_keyword_[0], re_keyword_[1]
-                print(res)
-                str1.append(res)
+        # 从第29行开始遍历读取的数据
+        for i in range(29, len(file_data)):
+            # 遍历异常字段的配置
+            for err_str in ErrorKeywordList:
+                # 判断ErrorKeywordList的异常字段，如果存在于读取的那行数据里面，则进行匹配
+                if err_str in file_data[i]:
+                    # 正则匹配异常数据
+                    page_name, log_keyword = re_keyword(file_data, i, err_str, 'Msg')
+                    # 拼接报错信息
+                    res = err_str, i+1, page_name, log_keyword
+                    # print(res)
+                    str1.append(res)
 
-            elif 'ANR' in s[i] or 'anr' in s[i]:
-                re_keyword_ = re_keyword(s, i, 'ANR', 'Msg')
-                res = 'ANR', i + 1, re_keyword_[0], re_keyword_[1]
-                print(res)
-                str1.append(res)
-        # print(str1)
         return str1
 
 
 if __name__ == '__main__':
-    read_file().get_file()
+    ReadFile(0).get_file()

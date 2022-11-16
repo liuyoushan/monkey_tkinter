@@ -35,15 +35,18 @@ def get_file_txt():
     # filelist.remove(filename)  # 从目录的文件里面去除本文件的文件名
     try:
         filelist = os.listdir(PATH)
-        a = []
+        files = []
         for i in filelist:
             if '.txt' in i:
-                a.append(i)
-        if not a:
-            a.append('无txt文件')
-        return a
+                files.append(i)
+        if not files:
+            files.append('无txt文件')
+        # 反转排序
+        files.reverse()
+        return files
     except NameError as e:
         print(e)
+
 
 
 # 查找手机设备
@@ -57,7 +60,7 @@ def devices():
         return False
 
 
-def runmonkey(parameter, get_nowTime):
+def runmonkey(parameter, file_path):
     '''
 
     :param parameter: 需要运行的命令参数
@@ -82,7 +85,7 @@ def runmonkey(parameter, get_nowTime):
                 "--ignore-timeouts {crash} --kill-process-after-error {p1} " \
                 "--throttle {ms} -v -v -v {click} 2>{PATH_error} 1>{PATH_info}" \
         .format(device=device, page=parameter['page'], ms=parameter['ms'],
-                click=parameter['click'], p1=run_data, PATH_info=get_nowTime[0], PATH_error=get_nowTime[1],
+                click=parameter['click'], p1=run_data, PATH_info=file_path[0], PATH_error=file_path[1],
                 crash=crash_if)
     print('info：运行命令:{}\n'.format(monkeycmd))
 
