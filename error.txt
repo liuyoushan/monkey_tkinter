@@ -129,3 +129,38 @@ data="200"
 //
 crash
 anr
+
+
+// crash:com.zego.liveroomplayground (pid 30411)
+// Short Msg: java.lang.IllegalStateException123addd
+// Long Msg: java.lang.IllegalStateException: Required view 'userid_describe' with ID 2131689810 for field 'recyclerView', method 'back', and method 'share' was not found. If this view is optional add '@Nullable' (fields) or '@Optional' (methods) annotation.
+// Build Label: Xiaomi/laurus/laurus:9/PKQ1.190416.001/V11.0.6.0.PFMCNXM:user/release-keys
+// Build Changelist: V11.0.6.0.PFMCNXM
+// Build Time: 1591963140000
+// java.lang.RuntimeException: Unable to start activity ComponentInfo{com.zego.liveroomplayground/com.zego.common.ui.ZegoLogShareActivity}: java.lang.IllegalStateException: Required view 'userid_describe' with ID 2131689810 for field 'recyclerView', method 'back', and method 'share' was not found. If this view is optional add '@Nullable' (fields) or '@Optional' (methods) annotation.
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2984)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3119)
+// 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+// 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+// 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1839)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:201)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6861)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:547)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:873)
+// Caused by: java.lang.IllegalStateException: Required view 'userid_describe' with ID 2131689810 for field 'recyclerView', method 'back', and method 'share' was not found. If this view is optional add '@Nullable' (fields) or '@Optional' (methods) annotation.
+// 	at butterknife.internal.Utils.findRequiredView(Utils.java:92)
+// 	at com.zego.common.ui.ZegoLogShareActivity_ViewBinding.<init>(ZegoLogShareActivity_ViewBinding.java:30)
+// 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+// 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+// 	at butterknife.ButterKnife.createBinding(ButterKnife.java:199)
+// 	at butterknife.ButterKnife.bind(ButterKnife.java:124)
+// 	at com.zego.common.ui.AbsBaseActivity.onCreate(AbsBaseActivity.java:56)
+// 	at android.app.Activity.performCreate(Activity.java:7232)
+// 	at android.app.Activity.performCreate(Activity.java:7221)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2964)
+// 	... 11 more
+//
