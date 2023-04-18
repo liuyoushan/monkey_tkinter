@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 import re
+import os
 
 '''
 log_analysis主要是日志分析相关
@@ -40,7 +41,8 @@ class ReadFile:
 
     # 按行读取文件
     def file(self):
-        with open(self.path, 'r') as f:
+        file_path = os.path.join(os.path.dirname(__file__), self.path)
+        with open(file_path, 'r') as f:
             n = 0
             str1 = []
             for i in f.readlines():
@@ -63,7 +65,7 @@ class ReadFile:
                     # 正则匹配异常数据
                     page_name, log_keyword = re_keyword(file_data, i, err_str, 'Msg')
                     # 拼接报错信息
-                    res = err_str, i+1, page_name, log_keyword
+                    res = err_str, i + 1, page_name, log_keyword
                     # print(res)
                     str1.append(res)
 
