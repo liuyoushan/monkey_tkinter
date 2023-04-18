@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import re
 import os
+import sys
 
 '''
 log_analysis主要是日志分析相关
@@ -41,7 +42,7 @@ class ReadFile:
 
     # 按行读取文件
     def file(self):
-        file_path = os.path.join(os.path.dirname(__file__), self.path)
+        file_path = os.path.join(os.path.dirname(os.path.realpath(sys.argv[0])), self.path)
         with open(file_path, 'r') as f:
             n = 0
             str1 = []

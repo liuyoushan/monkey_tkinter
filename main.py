@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 import pyperclip
-import log_analysis
-import monkey
 import threading
 import datetime
 import time
@@ -9,9 +7,11 @@ import tkinter  # 主窗口生成
 import tkinter.messagebox  # 弹出对话框
 from tkinter import *  # 运行按钮Button用到这个库
 from tkinter import ttk  # 下拉框控件要用ttk
-
 from os import path
 import sys
+
+import monkey
+import log_analysis
 
 bundle_dir = getattr(sys, '_MEIPASS', path.abspath(path.dirname(__file__)))
 path_to_dat = path.join(bundle_dir, 'img.png')
