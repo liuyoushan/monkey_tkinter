@@ -231,20 +231,20 @@ class MainPage:
 
     # 添加到线程池运行
     def run_thread(self):
-        self.static, self.data = self.entry_forms  # 额，先执行字段判断,和获取字段数据
-        self.threads = []
+        static, data = self.entry_forms  # 额，先执行字段判断,和获取字段数据
+        threads = []
         # 判断前端字段完整性
-        if self.static:
+        if static:
             # 初始化数据
             self.init_data()
             try:
                 # 运行monkey方法添加到线程
-                t = threading.Thread(target=self.run_monkey, args=())
-                self.threads.append(t)
+                t = threading.Thread(target=monkey.runmonkey, args=(data, monkey.log_path()))
+                threads.append(t)
                 # 自动计时方法添加到线程
                 ts = threading.Thread(target=self.runtime, args=())
-                self.threads.append(ts)
-                for i in self.threads:
+                threads.append(ts)
+                for i in threads:
                     i.start()
             except NameError as e:
                 print(e)
@@ -283,9 +283,9 @@ class MainPage:
                 continue
         return True, dicts
 
-    # 运行monkey命令
-    def run_monkey(self):
-        monkey.runmonkey(self.data, monkey.log_path())
+    # # 运行monkey命令
+    # def run_monkey(self):
+    #     monkey.runmonkey(self.data, monkey.log_path())
 
     # 运行计时交互
     def runtime(self):
